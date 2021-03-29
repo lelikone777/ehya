@@ -1,38 +1,202 @@
 .header
   background-color: $primary
-  background: url(../img/wave.png) no-repeat center bottom, url(../img/header-bg.jpg) no-repeat top / cover
-  min-height: 770px
+  background: url(../img/wave.svg) no-repeat  bottom/contain, url(../img/header-bg.jpg) no-repeat top/cover 
+  min-height: 742px
   &-top
     display: flex
     justify-content: space-between
     align-items: center
     padding-top: 24px
     padding-bottom: 34px
-  &-menu  
-    display: flex
-    justify-content: space-between
-    margin-left: auto
-    &__item
-      &:not(:last-child)
-        margin-right: 18px
-      &:first-child
-        margin-right: 30px
-    &__link
+    &__menu  
+      display: flex
+      justify-content: space-between
+      margin-left: auto
+      &-item
+        &:not(:last-child)
+          margin-right: 18px
+        &:first-child
+          margin-right: 30px
+      &-link
+        font-family: 'Open Sans', sans-serif
+        color: #fff
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+    &__button
       font-family: 'Open Sans', sans-serif
+      margin-left: 82px
+      background-color: transparent
+      padding: 13px 24px
       color: #fff
+      border: 2px solid #fff
+      border-radius: 8px
+      font-weight: bold
+      font-size: 16px
+      font-style: normal
+      line-height: 22px
+      cursor: pointer
+  &-middle
+    display: flex
+    flex-direction: column
+    align-items: center
+    &__title
+      font-family: Roboto, sans-serif
+      font-size: 48px
+      font-weight: bold
+      line-height: 60px
+      color: #fff
+      margin-bottom: 40px
+      margin-top: 110px
+    &__search
+      &-form
+        width: 760px
+        height: 56px
+        background-color: #fff
+        border-radius: 8px
+        padding: 8px 8px 8px 20px
+        min-height: 20px
+      &-group
+        height: 100%
+        display: flex
+        align-items: center
+      &-input
+        border: none
+        outline: none
+        width: 83%
+        vertical-align: middle
+        &::placeholder
+          color: $secondary
+          font-style: normal
+          font-weight: 600
+          font-size: 16px
+          line-height: 22px
+      &-button
+        font-family: Open Sans, sans-serif
+        width: 94px
+        height: 40px
+        border-radius: 8px
+        color: #fff
+        border: none
+        background-color: $primary
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 22px
+      &-icon
+        margin-right: 16px
+    &__tag
+      display: flex
+      align-items: center
+      margin-top: 24px
+      color: #fff
+      padding-bottom: 133px
+    &__popular
+      font-family: Open Sans, sans-serif
+      font-style: normal
       font-weight: 600
       font-size: 16px
       line-height: 22px
-  &-button
-    font-family: 'Open Sans', sans-serif
-    margin-left: 82px
-    background-color: transparent
-    padding: 13px 24px
-    color: #fff
-    border: 2px solid #fff
-    border-radius: 8px
-    font-weight: bold
-    font-size: 16px
-    font-style: normal
-    line-height: 22px
-    cursor: pointer
+      margin-right: 13px
+    &__link
+      font-family: Open Sans, sans-serif
+      margin-right: 20px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      border: 1px solid #fff
+      border-radius: 4px
+      padding: 6px 18px
+  &-bottom
+    display: flex
+    max-height: 380px
+    border-radius: 16px
+    overflow: hidden
+    transform: translateY(-10%)
+    background-color: #fff
+    &__image
+      width: 50%
+    &__info
+      width: 50%
+      padding: 36px 35px 32px 32px
+      border: 1px solid #E5EAF4
+    &__link
+      font-family: Open Sans, sans-serif
+      width: 126px
+      height: 32px
+      color: #36B37E
+      background-color: rgba(54, 179, 126, 0.1)
+      margin-bottom: 22px
+      padding: 6px 13px
+      border-radius: 22px
+      font-style: normal
+      font-weight: 600
+      font-size: 14px
+      line-height: 20px
+    &__title
+      font-family: Roboto, sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 31px
+      line-height: 48px
+      margin-bottom: 20px
+      margin-top: 23px
+    &__text
+      font-family: Open Sans, sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 32px
+      color: $text-color
+      margin-bottom: 43px
+      max-width: 480px
+    &__personal
+      display: flex
+    &__logo
+      &-img
+        width: 40px
+        height: 40px
+        border-radius: 50%
+        margin-right: 12px
+    &__author
+      margin-right: 54%
+      color: $text-color
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+    &__name
+      font-family: Open Sans, sans-serif
+      font-weight: 600
+      font-size: 16px
+      color: #183B56
+      line-height: 22px
+      margin-bottom: 4px
+    &__verified
+      display: flex
+      &-img
+        margin-right: 8px
+      &-icon
+        width: 16px
+      &-text
+        font-family: Open Sans, sans-serif
+        color: $text-color
+        font-style: italic
+        font-weight: normal
+        font-size: 14px
+        line-height: 19px
+        white-space: nowrap
+      &-date
+        font-family: Open Sans, sans-serif
+        align-items: center
+        display: flex
+        white-space: nowrap
+        font-style: normal
+        font-weight: 600
+        font-size: 16px
+        line-height: 22px
+        color: #5A7184
+
+
+

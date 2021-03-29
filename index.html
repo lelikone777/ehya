@@ -21,54 +21,145 @@
     <header class="header">
       <div class="container">
         <nav class="header-top">
-          <div class="header-logo">
+          <div class="header-top__logo">
             <img
               src="img/header-logo.svg"
               alt="icon: logo"
-              class="header-logo-img"
+              class="header-top__logo-img"
             />
           </div>
           <!-- /.header-top__logo -->
-          <ul class="header-menu">
-            <li class="header-menu__item">
-              <a href="#" class="header-menu__link">Домой</a>
+          <ul class="header-top__menu">
+            <li class="header-top__menu-item">
+              <a href="#" class="header-top__menu-link">Домой</a>
             </li>
-            <li class="header-menu__item">
-              <a href="#" class="header-menu__link header-menu__link--drop"
+            <li class="header-top__menu-item">
+              <a
+                href="#"
+                class="header-top__menu-link header-top__menu-link--drop"
                 >Лендинги
                 <img
                   src="img/angle-down.svg"
                   alt="logo: angle-down"
-                  class="header-menu__link-img"
+                  class="header-top__menu-link-img"
                 />
               </a>
             </li>
-            <li class="header-menu__item">
-              <a href="#" class="header-menu__link header-menu__link--drop"
+            <li class="header-top__menu-item">
+              <a
+                href="#"
+                class="header-top__menu-link header-top__menu-link--drop"
                 >Страницы
                 <img
                   src="img/angle-down.svg"
                   alt="logo: angle-down"
-                  class="header-menu__link-img"
+                  class="header-top__menu-link-img"
                 />
               </a>
             </li>
-            <li class="header-menu__item">
-              <a href="#" class="header-menu__link">Помощь</a>
+            <li class="header-top__menu-item">
+              <a href="#" class="header-top__menu-link">Помощь</a>
             </li>
           </ul>
-          <!-- /.header-menu -->
-          <button class="header-button">Получить</button>
-          <!-- /.header-button -->
+          <!-- /.header-top__menu -->
+          <button class="header-top__button">Получить</button>
+          <!-- /.header-top__button -->
         </nav>
         <!-- /.header-top -->
       </div>
       <!-- /.container -->
-      <div class="header-middle"></div>
-      <!-- /.header-middle -->
-      <div class="header-bottom"></div>
-      <!-- /.header-bottom -->
-      
+      <div class="container">
+        <div class="header-middle">
+          <h1 class="header-middle__title">Отдел новостей</h1>
+          <div class="header-middle__wrapper">
+            <form action="#" class="header-middle__search-form">
+              <div class="header-middle__search-group">
+                <img
+                  src="img/search.svg"
+                  alt="Icon: search"
+                  class="header-middle__search-icon"
+                />
+                <input
+                  class="header-middle__search-input"
+                  type="search"
+                  placeholder="Поиск постов"
+                />
+                <button type="submit" class="header-middle__search-button">
+                  Поиск
+                </button>
+              </div>
+            </form>
+            <!-- /.header-middle__search-form -->
+            <div class="header-middle__tag">
+              <div class="header-middle__popular">Популярные Тэги :</div>
+              <a class="header-middle__link">Design</a>
+              <a class="header-middle__link">User Experience</a>
+              <a class="header-middle__link">User Interfaces</a>
+            </div>
+          </div>
+          <!-- /.header-middle__wrapper -->
+        </div>
+        <!-- /.header-middle -->
+      </div>
+      <!-- /.container -->
+
+      <div class="container">
+        <div class="header-bottom">
+          <div class="header-bottom__image">
+            <img
+              class="header-bottom__image-img"
+              src="img/header-bottom-Image.jpg"
+              alt="iamge: top card image"
+            />
+          </div>
+          <div class="header-bottom__info">
+            <a class="header-bottom__link" href="#">Предложения</a>
+            <h2 class="header-bottom__title">
+              Дешевые Авиабилеты - Отличный Способ Сэкономить
+            </h2>
+
+            <div class="header-bottom__text">
+              В этом цифровом поколении, где информацию можно легко получить за
+              секунды, визитки ...
+            </div>
+
+
+
+            <div class="header-bottom__personal">
+              <div class="header-bottom__logo">
+                <img
+                  class="header-bottom__logo-img"
+                  src="img/header-bottom-avatar.jpg"
+                  alt="avatar: Viola Manisa"
+                />
+              </div>
+              <div class="header-bottom__author">
+                <div class="header-bottom__name">Viola Manisa</div>
+                <div class="header-bottom__verified">
+                  <div class="header-bottom__verified-img">
+                    <img
+                      src="img/verified.svg"
+                      alt="icon: verified"
+                      class="header-bottom__verified-icon"
+                    />
+                  </div>
+                  <div class="header-bottom__verified-text">Verified writer</div>
+                </div>
+              </div>
+              <div class="header-bottom__verified-date">02 May</div>
+            </div>
+
+
+
+
+
+
+          </div>
+          <!-- /.header-bottom__info -->
+        </div>
+        <!-- /.header-bottom -->
+      </div>
+      <!-- /.container -->
     </header>
     <!-- /.header -->
   </body>
