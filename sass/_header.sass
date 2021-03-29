@@ -1,7 +1,32 @@
 .header
-  background-color: $primary
-  background: url(../img/wave.svg) no-repeat  bottom/contain, url(../img/header-bg.jpg) no-repeat top/cover 
-  min-height: 742px
+  background-image: url(../img/header-bg.jpg)
+  background-repeat: no-repeat
+  position: relative
+  background-size: cover
+  height: 100%
+  z-index: -3
+  height: 742px
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(24, 59, 86, 0.65)
+    z-index: -2
+  // background-color: $primary
+  // background: url(../img/wave.svg) no-repeat  bottom/contain, url(../img/header-bg.jpg) no-repeat top/cover 
+  // height: 742px
+  &-wave
+    pos
+    width: 100%
+    position: absolute
+    bottom: -1px
+    left: 0
+    z-index: -1
   &-top
     display: flex
     justify-content: space-between
