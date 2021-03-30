@@ -19,7 +19,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header-container-top ">
+      <div class="container header-container-top">
         <nav class="header-top">
           <div class="header-top__logo">
             <img
@@ -37,6 +37,7 @@
               <a
                 href="#"
                 class="header-top__menu-link header-top__menu-link--drop"
+                type="menu"
                 >Лендинги
                 <img
                   src="img/angle-down.svg"
@@ -62,14 +63,16 @@
             </li>
           </ul>
           <!-- /.header-top__menu -->
-          <button class="header-top__button">Получить</button>
+          <button class="button modal-button header-top__button">
+            Получить
+          </button>
           <!-- /.header-top__button -->
         </nav>
         <!-- /.header-top -->
       </div>
       <!-- /.container -->
-      <div class="container header-container-middle ">
-        <div class="header-middle">
+      <div class="header-middle">
+        <div class="container header-container-middle">
           <h1 class="header-middle__title">Отдел новостей</h1>
           <div class="header-middle__wrapper">
             <form action="#" class="header-middle__search-form">
@@ -84,7 +87,10 @@
                   type="search"
                   placeholder="Поиск постов"
                 />
-                <button type="submit" class="header-middle__search-button">
+                <button
+                  type="submit"
+                  class="button button-blue header-middle__search-button"
+                >
                   Поиск
                 </button>
               </div>
@@ -103,27 +109,135 @@
       </div>
       <!-- /.container -->
 
-      <div class="container header-container-bottom ">
-        <div class="header-bottom">
-          <div class="header-bottom__image">
-            <img
-              class="header-bottom__image-img"
-              src="img/header-bottom-Image.jpg"
-              alt="iamge: top card image"
-            />
+      <div class="header-bottom">
+        <div class="container header-container-bottom">
+          <div class="header-bottom__wrapper">
+            <div class="header-bottom__image">
+              <img
+                class="header-bottom__image-img"
+                src="img/header-bottom-Image.jpg"
+                alt="iamge: top card image"
+              />
+            </div>
+            <div class="header-bottom__info">
+              <a class="offer offer-small header-bottom__offer" href="#"
+                >Предложения</a
+              >
+              <h2 class="card-title card-long__title header-bottom__title">
+                Дешевые Авиабилеты - Отличный Способ Сэкономить
+              </h2>
+
+              <div class="section-text header-bottom__text">
+                В этом цифровом поколении, где информацию можно легко получить
+                за секунды, визитки ...
+              </div>
+
+              <div class="personal header-bottom__personal">
+                <div class="header-bottom__logo">
+                  <img
+                    class="personal-avatar header-bottom__avatar"
+                    src="img/header-bottom-avatar.jpg"
+                    alt="avatar: Viola Manisa"
+                  />
+                </div>
+                <div class="personal-author header-bottom__author">
+                  <div class="personal-name header-bottom__name">Viola Manisa</div>
+                  <div class="personal-verified header-bottom__verified">
+                    <div class="personal-verified__img header-bottom__verified-img">
+                      <img
+                        src="img/verified.svg"
+                        alt="icon: verified"
+                        class="personal-verified__icon header-bottom__verified-icon"
+                      />
+                    </div>
+                    <div class="personal-verified__text header-bottom__verified-text">
+                      Verified writer
+                    </div>
+                  </div>
+                </div>
+                <div class="personal-verified__date header-bottom__verified-date">02 May</div>
+              </div>
+            </div>
+            <!-- /.header-bottom__info -->
           </div>
-          <div class="header-bottom__info">
-            <a class="header-bottom__link" href="#">Предложения</a>
+        </div>
+        <!-- /.header-bottom__wrapper -->
+        <!-- /.header-bottom -->
+      </div>
+      <!-- /.container -->
+
+      <img src="img/wave.svg" alt="wave" class="header-wave" />
+    </header>
+    <!-- /.header -->
+
+    <section class="popular">
+      <div class="container">
+        <div class="popular-top">
+          <h2 class="section-title popular-top__title">Популярные Статьи</h2>
+          <p class="section-text popular-top__text">
+            Мы делимся общими тенденциями, стратегическими идеями, мнениями,
+            короткими и длинными историями команды, стоящей за компанией.
+          </p>
+          <a class="button button-light popular-top__button"
+            >Смотреть все
+            <img
+              src="/img/angle-right.svg"
+              alt="logo: angle right"
+              class="popular-top__image"
+            />
+          </a>
+        </div>
+        <!-- /.popular-top -->
+
+        <div class="popular-bottom">
+          <div class="popular-bottom__card popular-bottom__card-left">
+            <a class="offer offer-big popular-bottom__offer" href="#"
+              >Предложения</a
+            >
+            <h2 class="card-title card-big__title popular-bottom__title">
+              Как защитить свою семью от угарного газа
+            </h2>
+
+            <div class="personal popular-bottom__personal">
+              <div class="personal-logo popular-bottom__logo">
+                <img
+                  class="personal-avatar popular-botom__avatar"
+                  src="img/header-bottom-avatar.jpg"
+                  alt="avatar: Viola Manisa"
+                />
+              </div>
+              <div class="personal-author popular-bottom__author">
+                <div class="personal-name popular-bottom__name">Viola Manisa</div>
+                <div class="header-bottom__verified">
+                  <div class="personal-verified popular-bottom__verified">
+                    <img
+                      src="img/verified.svg"
+                      alt="icon: verified"
+                      class="personal-verified__icon popular-bottom____verified-icon"
+                    />
+                  </div>
+                  <div class="header-bottom__verified-text">
+                    Verified writer
+                  </div>
+                </div>
+              </div>
+              <div class="header-bottom__verified-date">02 May</div>
+            </div>
+          </div>
+          <!-- /.popular-bottom__card -->
+
+          <div class="popular-bottom__card popular-bottom__card-right">
+            <a class="offer offer-big popular-bottom__offer" href="#"
+              >Предложения</a
+            >
             <h2 class="header-bottom__title">
               Дешевые Авиабилеты - Отличный Способ Сэкономить
             </h2>
 
-            <div class="header-bottom__text">
+            <div class="section-text header-bottom__text">
               В этом цифровом поколении, где информацию можно легко получить за
               секунды, визитки ...
             </div>
-
-
 
             <div class="header-bottom__personal">
               <div class="header-bottom__logo">
@@ -143,26 +257,20 @@
                       class="header-bottom__verified-icon"
                     />
                   </div>
-                  <div class="header-bottom__verified-text">Verified writer</div>
+                  <div class="header-bottom__verified-text">
+                    Verified writer
+                  </div>
                 </div>
               </div>
               <div class="header-bottom__verified-date">02 May</div>
             </div>
-
-
-
-
-
-
           </div>
-          <!-- /.header-bottom__info -->
+          <!-- /.popular-bottom__card -->
         </div>
-        <!-- /.header-bottom -->
+        <!-- /.popular-bottom -->
       </div>
       <!-- /.container -->
-      <img src="img/wave.svg" alt="wave" class="header-wave">
-    </header>
-    <!-- /.header -->
-    
+    </section>
+    <!-- /.popular -->
   </body>
 </html>
