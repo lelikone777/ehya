@@ -11,11 +11,19 @@
     display: flex
     justify-content: space-between
     &__text 
+      z-index: 1
       color: $light
+      font-family: Open Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 25px
     &__name 
       color: $light
       z-index: 100
     &__card
+      display: flex
+      flex-direction: column
       position: relative
       width: 31.6% 
       min-height: 500px
@@ -39,11 +47,12 @@
         right: 0
         left: 0
         position: absolute
-        background: linear-gradient(180deg, rgba(24, 59, 86, 0.0001) 0%, rgba(22, 49, 70, 0.453847) 45.38%, #152532 100%)
+        background: linear-gradient(180deg, rgba(24, 59, 86, 0.0001) 0%, #152532 100%)
     &__title
       z-index: 1
       display: block
       margin-top: auto
+      margin-bottom: 12px
       font-family: Roboto, sans-serif
       font-style: normal
       font-weight: bold
