@@ -89,7 +89,7 @@
                 />
                 <input
                   class="header-middle__search-input"
-                  type="search"
+                  type="text"
                   placeholder="Поиск постов"
                 />
                 <button
@@ -959,26 +959,54 @@
       <div class="container">
         <div class="subscribe-wrapper">
           <div class="subscribe-left">
-            <h2 class="subscribe__title">Получите наши истории на ваш почтовый ящик еженедельно.</h2>
+            <h2 class="subscribe__title">
+              Получите наши истории на ваш почтовый ящик еженедельно.
+            </h2>
             <form class="subscribe__form" action="#" method="post">
-              <input type="email" name='email' class="subscribe__input">
+              <input
+                placeholder="Ваш Email"
+                type="email"
+                name="email"
+                class="subscribe__input"
+              />
               <button
-                  type="submit"
-                  class="button button-blue "
-                >
-                  Поиск
-                </button>
+                type="submit"
+                class="button button-blue subscribe__button"
+              >
+                Начать
+              </button>
             </form>
+            <p class="subscribe__text">
+              Получите ответ завтра, если отправите его до 9 вечера сегодня.
+              Если мы получили после 9 вечера, мы получим ответ на следующий
+              день.
+            </p>
           </div>
           <!-- /.subscribe-left -->
           <div class="subscribe-right">
+            <div class="subscribe__card">
+              <div class="subscribe__picture">
+                <img
+                  src="img/subscribe-img.png"
+                  alt="img: joystick"
+                  class="subscribe__img"
+                />
+              </div>
+              <div class="subscribe__card-info">
+                <div class="subscribe__card-title">
+                  Лучшие статьи каждую неделю
+                </div>
+                <p class="subscribe__card-text">
+                  Наши предложения по страхованию везде одинаковы.
+                </p>
+              </div>
+            </div>
+            <!-- /.sunscribe__card -->
+            <img class="subscribe__square-blue" src="img/square-blue.svg" alt="#">
+            <img class="subscribe__square-grey" src="img/square-grey.svg" alt="#">
 
           </div>
           <!-- /.subscribe-right -->
-
-
-
-
         </div>
         <!-- /.subscribe-wrapper -->
       </div>

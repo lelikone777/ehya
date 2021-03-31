@@ -1,19 +1,123 @@
-.subscribe 
+.subscribe
+  z-index: 1 
   background-color: #0D2436
   &-wrapper
+    z-index: 2
     min-height: 534px
     display: flex
     justify-content: space-between
-    width: 50%
   &-left
+    width: 50%
   &__title
     margin-top: 66px
     margin-bottom: 48px
+    font-family: Roboto
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 48px
+    letter-spacing: 0.2px
+    color: #FFFFFF
   &__form
     display: flex
     justify-content: space-between
+    align-items: center
     max-width: 494px
-  &__input
-    max-width: 320px
     height: 56px
+    margin-bottom: 24px
+  &__input
+    height: 100%
+    width: 320px
+    background-color: $light
+    border-radius: 8px
+    border: none
+    outline: none
+    padding-left: 16px
+    padding-right: 16px
+    margin-right: 8px
+    &::placeholder
+      font-family: Open Sans, sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 22px
+      color: #5A7184
+      opacity: 0.75
+  &__button
+    padding: 16px 49px
+    font-family: Open Sans, sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+  &__text
+    display: block
+    max-width: 555px
+    font-family: Open Sans, sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 28px
+    color: #5A7184
+
+
+  &-right
+    z-index: 3
+    width: 50%
+    position: relative
+  &__card
+    z-index: 2
+    margin-left: 23.5%
+    width: 30%
+    margin-top: -6%
+    min-width: 466px
+    min-height: 385px
+    background-color: $light
+    box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.15)
+    border-radius: 16px
+    padding: 8px 8px 32px 8px
+    &-info  
+      padding: 28px 32px 0 32px
+    &-title
+      display: block
+      margin-bottom: 12px
+      font-family: Roboto, sans-serif
+      text-align: left
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 32px
+      letter-spacing: 0.2px
+      color: #183B56
+    &-text
+      text-align: left
+      font-family: Open Sans, sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 32px
+      color: #5A7184
+  &__picture
+    // margin: 8px 8px 28px 8px
+    border-radius: 12px
+    overflow: hidden
+  &__img
+    width: 100%
+
+
+.subscribe__square-blue
+  z-index: -1
+  display: block
+  position: absolute
+  top: 10px
+  right: -14%
+
+.subscribe__square-grey
+  z-index: -1
+  position: absolute
+  top: 210px
+  left: -20px
+
+
+
 
