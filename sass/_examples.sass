@@ -1,5 +1,6 @@
 .examples
   margin-bottom: 96px
+  position: relative
   &__top
     margin-bottom: 48px
     display: flex
@@ -12,24 +13,44 @@
       margin-top: -9px
       margin-right: 17px
   &__slider
-    // width: 1140px
-    // min-height: 381px
+    width: 1140px
+    min-height: 381px
+    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.03)
+    border-radius: 16px
     &-wrapper
-      width: 1140px
-      min-height: 381px
-      box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.03)
-      border-radius: 16px
-      overflow: hidden
-  &__slide
+  &__button
+    position: absolute
+    top: 58%
+    z-index: 99
+    width: 55px
+    height: 55px
+    border: none
+    cursor: pointer
+    background-repeat: no-repeat
+    background-position: center
+    &--prev
+      background-image: url('../img/slider-left.svg')
+      left: 120px
+    &--next
+      background-image: url('../img/slider-right.svg')
+      right: 120px
+    &::active, &::focus
+      outline: none
+  &__slide  
   &__card
+    z-index: -1
     display: flex
     min-height: 380px
     border-radius: 16px
-    overflow: hidden
     background-color: $light
   &__image
     width: 50%
+    height: 100%
+  &__img
+    height: 100%
+    width: 100%
   &__info
+    border-radius: 0 16px 16px 0
     width: 50%
     padding: 36px 48px 32px 32px
     border: 1px solid #E5EAF4
@@ -76,6 +97,10 @@
   &__verified
     display: flex
     margin-right: 8px
+    &-img
+      margin-right: 8px
+    &-icon
+      width: 16px
     &-text
       color: $dark-grey
       font-family: Open Sans, sans-serif
@@ -85,6 +110,14 @@
       line-height: 19px
       white-space: nowrap
     &-date
+      font-family: Open Sans, sans-serif
+      align-items: center
+      display: flex
+      white-space: nowrap
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
       color: $light-grey
   &__name
     color: $dark-blue
@@ -94,11 +127,3 @@
 
 
 
-
-      
-//   &__slider-wrapper
-// .swiper-container
-//     max-height: 380px
-//     border-radius: 16px
-//     overflow: hidden
-// .slider-bottom-card
