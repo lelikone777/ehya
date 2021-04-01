@@ -7,6 +7,14 @@
   .container
     max-width: 960px
 
+  .header
+    &-middle
+      &__wrapper
+        width: 80%
+      &__search
+        &-form
+          width: 100%
+
   .examples
     &__slider
       width: 100%
@@ -31,6 +39,9 @@
   .container
     max-width: 700px
   .header
+    &-top
+      &__button
+        margin-left: 20px
     &-bottom
       &__card
         flex-direction: column
@@ -41,6 +52,52 @@
 
   .popular
     margin-top: 580px
+    &-top
+      &__title
+        font-size: 30px
+        line-height: 38px
+      &__text
+        font-size: 16px
+        line-height: 26px
+    &-bottom
+      &__offer
+        font-size: 14px
+        line-height: 20px
+      &__title
+        font-size: 27px    
+        line-height: 34px
+  
+  .last
+    &-top
+      &__title
+        font-size: 30px
+        line-height: 38px
+      &__text
+        font-size: 16px
+        line-height: 26px
+    &__title
+        font-size: 22px
+        line-height: 28px
+    &__text
+        font-size: 15px
+        line-height: 24px
+    &__personal
+      flex-direction: column
+      align-items: center
+      &-center
+        margin-top: 40px
+    &__avatar
+      margin-right: 0
+      margin-bottom: 5px
+    &__img
+      margin-right: 0
+    &__name
+      text-align: center
+    &__author
+      margin-right: 0
+
+
+      
 
   .examples
     &__link
@@ -51,10 +108,25 @@
       height: 380px
     &__info
       width: 100%
+    &__button
+      top: 45.5%
+      &--next
+        right: -25px
+      &--prev
+        left: -25px
+    &__title
         
 
 
-// @media (max-width: 767px)
+@media (max-width: 767px)
+  .container
+    max-width: 576px
+    width: 92%
+  .header
+    &-top
+      &__button
+      &__menu
+        display: none
 
 
 // @media (max-width: 576px)
