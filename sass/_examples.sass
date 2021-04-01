@@ -1,23 +1,52 @@
 .examples
   margin-bottom: 96px
   position: relative
-  &__top
+  &__header
     margin-bottom: 48px
     display: flex
     flex-wrap: wrap
     justify-content: space-between
     align-items: center
     &-title
-      margin-bottom: 7px
+      margin-bottom: 10px
+      font-family: Roboto, sans-serif
+      color: $dark-blue
+      letter-spacing: 0.2px
+      font-style: normal
+      font-weight: bold
+      font-size: 36px
+      line-height: 48px
+      flex-basis: 100%
+    &-text
+      font-family: Open Sans, sans-serif
+      color: $dark-grey
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 32px
     &-button
       margin-top: -9px
-      margin-right: 17px
+      margin-right: 2px
+      font-family: Open Sans, sans-serif
+      display: inline-flex
+      align-items: center
+      border-radius: 8px
+      padding: 11px 19px
+      color: $primary
+      background-color: transparent
+      border: 2px solid $primary
+      text-decoration: none
+      font-weight: bold
+      font-style: normal
+      font-size: 16px
+      line-height: 22px
   &__slider
     width: 1140px
-    min-height: 381px
+    height: 380px
     box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.03)
     border-radius: 16px
-    &-wrapper
+    overflow: hidden
+  &__wrapper
   &__button
     position: absolute
     top: 58%
@@ -38,10 +67,8 @@
       outline: none
   &__slide  
   &__card
-    z-index: -1
     display: flex
-    min-height: 380px
-    border-radius: 16px
+    height: 380px
     background-color: $light
   &__image
     width: 50%
@@ -56,6 +83,18 @@
     border: 1px solid #E5EAF4
   &__offer
     margin-bottom: 22px
+    margin-left: 1px
+    font-family: Open Sans, sans-serif
+    border-radius: 22px
+    font-weight: 600
+    font-size: 14px
+    line-height: 20px
+    background-color: rgba(54, 179, 126, 0.1)
+    padding: 6px 13px
+    font-style: normal
+    font-size: 16px
+    line-height: 22px
+    color: $primary
   &__title
     margin-top: 23px
     margin-bottom: 20px
@@ -74,6 +113,10 @@
     font-weight: normal
     font-size: 18px
     line-height: 32px
+  &__personal
+      z-index: 0
+      display: flex
+  
   &-avatar
     margin-right: 12px
     width: 40px

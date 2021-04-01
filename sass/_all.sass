@@ -8,21 +8,258 @@
     left: 0
     right: 0
     z-index: -1
-  &-top
-    margin-bottom: 48px
+  &-header
     display: flex
-    flex-wrap: wrap
     justify-content: space-between
     align-items: center
+    flex-wrap: wrap
+    margin-bottom: 13px
     &__title
-      margin-bottom: 7px
+      margin-bottom: 16px
+      font-family: Roboto, sans-serif
+      color: $dark-blue
+      letter-spacing: 0.2px
+      font-style: normal
+      font-weight: bold
+      font-size: 36px
+      line-height: 48px
+      flex-basis: 100%
     &__text
       max-width: 602px
+      font-family: Open Sans, sans-serif
+      color: $dark-grey
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 32px
     &__button
       margin-top: -9px
       margin-right: 17px
-  &-cards
-    &__top
-      margin-bottom: 30px
 
-    
+
+
+  &__cards
+  &-top
+    margin-bottom: 30px
+    display: flex
+    justify-content: space-between
+    &__card
+      display: flex
+      flex-direction: column
+      padding: 32px 48px 42px 46px
+      position: relative
+      overflow: hidden
+      border-radius: 8px
+      min-height: 600px
+      width: 48.5%
+      &--left
+        background-image: url('../img/popular-bottom__card-left.jpg')
+      &--right
+        background-image: url(../img/popular-bottom__card-right.jpg)
+      &::before
+        content: ''
+        width: 100%
+        height: 100%
+        top: 0
+        bottom: 0
+        right: 0
+        left: 0
+        position: absolute
+        background: linear-gradient(180deg, rgba(24, 59, 86, 0.0001) 0%, rgba(22, 49, 70, 0.453847) 45.38%, #152532 100%)
+    &__offer
+        margin-left: -18px
+        align-self: start
+        font-family: Open Sans, sans-serif
+        color: $green
+        border-radius: 22px
+        font-style: normal
+        font-weight: 600
+        text-transform: uppercase
+        padding: 5px 14px
+        background-color: #fff
+        font-size: 16px
+        line-height: 22px
+    &__title
+      display: block
+      margin-top: auto
+      font-family: Roboto, sans-serif
+      font-size: 36px
+      line-height: 48px
+      font-weight: bold
+      font-style: normal
+      letter-spacing: 0.2px
+      color: $light
+      z-index: 1
+    &__personal
+      display: flex
+      z-index: 0
+      &-left
+        margin-top: 73px
+      &-right
+        margin-top: 33px
+    &__img
+      margin-right: 12px
+      width: 40px
+      height: 40px
+      border-radius: 50%
+    &__avatar
+      margin-right: 12px
+      width: 40px
+      height: 40px
+      border-radius: 50%
+    &__author
+      font-family: Open Sans, sans-serif
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      margin-right: auto
+    &__name
+      font-family: Open Sans, sans-serif
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      margin-bottom: 4px
+      color: $light
+    &__verified
+      display: flex
+      margin-right: 8px
+    &__check
+      margin-right: 8px
+    &__icon
+      width: 16px
+    &__description
+      font-family: Open Sans, sans-serif
+      color: $dark-grey
+      font-style: italic
+      font-weight: normal
+      font-size: 14px
+      line-height: 19px
+      white-space: nowrap
+    &__date
+      font-family: Open Sans, sans-serif
+      align-items: center
+      display: flex
+      white-space: nowrap
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      color: $light-grey
+
+  &-bottom
+    display: flex
+    justify-content: space-between
+    margin-bottom: 48px
+    &__text 
+      font-family: Open Sans, sans-serif
+      z-index: 1
+      color: $light
+      font-style: normal
+      font-weight: normal
+      font-size: 17px
+      line-height: 25px
+    &__name 
+      color: $light
+      z-index: 100
+    &__card
+      display: flex
+      flex-direction: column
+      position: relative
+      width: 31.6% 
+      min-height: 500px
+      padding: 40px 32px 39px 32px
+      border-radius: 8px
+      overflow: hidden
+      background-repeat: no-repeat
+      background-size: cover
+      &-left
+        background-image: url('../img/last-card-left.jpg') 
+      &-center
+        background-image: url('../img/last-card-center.jpg') 
+      &-right
+        background-image: url('../img/last-card-right.jpg')
+      &::before
+        content: ''
+        width: 100%
+        height: 100%
+        top: 0
+        bottom: 0
+        right: 0
+        left: 0
+        position: absolute
+        background: linear-gradient(180deg, rgba(24, 59, 86, 0.0001) 0%, #152532 100%)
+    &__title
+      z-index: 1
+      display: block
+      margin-top: auto
+      margin-bottom: 12px
+      font-family: Roboto, sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 28px
+      line-height: 36px
+      letter-spacing: 0.2px
+      color: $light
+    &__personal
+      display: flex
+      z-index: 0
+      &-left
+        margin-top: 20px
+      &-center
+        margin-top: 20px
+      &-right
+        margin-top: 45px
+    &__img
+      margin-right: 12px
+      width: 40px
+      height: 40px
+      border-radius: 50%
+    &__avatar
+      margin-right: 12px
+      width: 40px
+      height: 40px
+      border-radius: 50%
+    &__author
+      font-family: Open Sans, sans-serif
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      margin-right: auto
+    &__name
+      font-family: Open Sans, sans-serif
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      margin-bottom: 4px
+      color: $light
+    &__verified
+      display: flex
+      margin-right: 8px
+    &__check
+      margin-right: 8px
+    &__icon
+      width: 16px
+    &__description
+      font-family: Open Sans, sans-serif
+      color: $dark-grey
+      font-style: italic
+      font-weight: normal
+      font-size: 14px
+      line-height: 19px
+      white-space: nowrap
+    &__date
+      font-family: Open Sans, sans-serif
+      align-items: center
+      display: flex
+      white-space: nowrap
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      color: $light-grey
+
+
+
+        
