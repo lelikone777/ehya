@@ -23,6 +23,9 @@
   &-bottom
     display: flex
     justify-content: space-between
+    &__link
+      z-index: 10
+      width: 48.5%
     &__card
       display: flex
       flex-direction: column
@@ -31,7 +34,6 @@
       overflow: hidden
       border-radius: 8px
       min-height: 600px
-      width: 48.5%
       &-left
         background-image: url('../img/popular-bottom__card-left.jpg')
       &-right
@@ -49,6 +51,7 @@
     &__offer
       margin-left: -16px
       align-self: start
+      z-index: 1
     &__title
       display: block
       margin-top: auto

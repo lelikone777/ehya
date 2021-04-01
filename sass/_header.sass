@@ -145,8 +145,12 @@
       font-size: 14px
       line-height: 20px
       border: 1px solid $light
+      color: $light
       border-radius: 4px
       padding: 6px 18px
+      text-decoration: none
+      &::hover
+        text-decoration: none
 
 
 
@@ -155,6 +159,7 @@
     &__card
       display: flex
       min-height: 380px
+      border: none
       border-radius: 16px
       overflow: hidden
       transform: translateY(-10%)
@@ -163,6 +168,11 @@
       z-index: 99
     &__image
       width: 50%
+      height: 100%
+      // background-image: url('../img/header-bottom-Image.jpg')
+      // background-repeat: no-repeat
+      // background-size: cover
+      // background-position: center center
     &__info
       width: 50%
       padding: 36px 48px 32px 32px
