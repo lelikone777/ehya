@@ -1,6 +1,5 @@
 .examples
   margin-bottom: 96px
-  position: relative
   &__header
     margin-bottom: 48px
     display: flex
@@ -41,15 +40,16 @@
       font-size: 16px
       line-height: 22px
   &__slider
-    width: 1140px
-    height: 380px
-    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.03)
-    border-radius: 16px
-    overflow: hidden
-  &__wrapper
+    width: 100%
+    min-height: 380px
+    position: relative
+    &-wrapper
+      box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.03)
+      border-radius: 16px
+      overflow: hidden
   &__button
     position: absolute
-    top: 58.5%
+    top: 42.5%
     z-index: 99
     width: 55px
     height: 55px
@@ -59,14 +59,18 @@
     background-position: center
     &--prev
       background-image: url('../img/slider-left.svg')
-      left: 122px
+      left: -28px
     &--next
       background-image: url('../img/slider-right.svg')
-      right: 123px
+      right: -25px
     &::active, &::focus
       outline: none
   &__slide  
+    border-radius: 16px
+    overflow: hidden
   &__card
+    border-radius: 16px
+    overflow: hidden
     display: flex
     height: 380px
     background-color: $light
