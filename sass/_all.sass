@@ -1,6 +1,25 @@
 .all
   position: relative
-  padding-bottom: 303px
+  padding-bottom: 252px
+  &__button
+    margin-right: 10px
+    display: inline-flex
+    flex-basis: 100%
+    font-family: Open Sans, sans-serif
+    align-items: center
+    border-radius: 8px
+    // padding: 11px 19px
+    padding: 11px 24px 11px 17px
+    color: $primary
+    background-color: transparent
+    border: 2px solid $primary
+    text-decoration: none
+    font-weight: bold
+    font-style: normal
+    font-size: 16px
+    line-height: 22px
+    img
+      margin-left: 7px
   &-wave
     position: absolute
     width: 100%
@@ -39,23 +58,35 @@
 
 
   &__cards
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+
+
+
   &-top
     margin-bottom: 30px
+    flex-basis: 100%
     display: flex
     justify-content: space-between
     &__card
       display: flex
       flex-direction: column
-      padding: 32px 48px 42px 46px
+      padding: 32px 47px 40px 46px
       position: relative
       overflow: hidden
       border-radius: 8px
       min-height: 600px
       width: 48.5%
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: center center
       &--left
-        background-image: url('../img/popular-bottom__card-left.jpg')
+        background-image: url('../img/all-top-left.png')
       &--right
-        background-image: url(../img/popular-bottom__card-right.jpg)
+        background-image: url('../img/all-top-right.png')
       &::before
         content: ''
         width: 100%
@@ -94,7 +125,7 @@
       display: flex
       z-index: 0
       &-left
-        margin-top: 73px
+        margin-top: 80px
       &-right
         margin-top: 33px
     &__img
@@ -119,7 +150,7 @@
       font-weight: 600
       font-size: 16px
       line-height: 22px
-      margin-bottom: 4px
+      margin-bottom: 3px
       color: $light
     &__verified
       display: flex
@@ -149,9 +180,11 @@
 
   &-bottom
     display: flex
+    flex-basis: 100%
     justify-content: space-between
     margin-bottom: 48px
     &__text 
+      text-align: left
       font-family: Open Sans, sans-serif
       z-index: 1
       color: $light
@@ -159,6 +192,10 @@
       font-weight: normal
       font-size: 17px
       line-height: 25px
+      &-center
+        font-size: 18px
+      &-right
+        font-size: 18px
     &__name 
       color: $light
       z-index: 100
@@ -173,12 +210,13 @@
       overflow: hidden
       background-repeat: no-repeat
       background-size: cover
+      background-position: center center
       &-left
-        background-image: url('../img/last-card-left.jpg') 
+        background-image: url('../img/all-bottom-left.png') 
       &-center
-        background-image: url('../img/last-card-center.jpg') 
+        background-image: url('../img/all-bottom-center.png') 
       &-right
-        background-image: url('../img/last-card-right.jpg')
+        background-image: url('../img/all-bottom-right.png')
       &::before
         content: ''
         width: 100%
@@ -205,11 +243,11 @@
       display: flex
       z-index: 0
       &-left
-        margin-top: 20px
+        margin-top: 17px
       &-center
-        margin-top: 20px
+        margin-top: 17px
       &-right
-        margin-top: 45px
+        margin-top: 17px
     &__img
       margin-right: 12px
       width: 40px
