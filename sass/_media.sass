@@ -217,8 +217,6 @@
         left: 50%
         bottom: -70px
         transform: translateX(-50%)
-
-    margin-top: 650px
     &-bottom
       flex-direction: column
       &__link
@@ -245,6 +243,8 @@
       margin-bottom: 20px
     &__card
       height: 100%
+    &__text
+      overflow-Y: auto
     &__personal
       flex-direction: row
       align-items: center
@@ -269,6 +269,23 @@
         left: 50%
         bottom: -70px
         transform: translateX(-50%)
+
+
+  .all
+    &-top
+      flex-direction: column
+      &__link
+        width: 100%
+        &-left
+          margin-bottom: 16px
+    &-bottom
+      flex-direction: column
+      &__link
+        width: 100%
+        &:not(:last-child)
+          margin-bottom: 16px
+        
+
 
 
 
