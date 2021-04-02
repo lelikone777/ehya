@@ -86,7 +86,7 @@
           <button
             class="header-top__button"
             data-toggle="modal"
-            data-href="#booking-modal"
+            data-href="#rating-modal"
           >
             Получить
           </button>
@@ -1116,7 +1116,7 @@
         <a href="#" class="modal__close">
           <img src="img/close.svg" alt="icon: close" />
         </a>
-        <h3 class="modal__title modal__message-title">Send us rating</h3>
+        <h3 class="modal__title modal__message-title">Получайте наши истории на ваш почтовый ящик еженедельно.</h3>
         <form action="send.php" method="POST" class="form modal__form">
           <input
             type="text"
@@ -1149,8 +1149,8 @@
             name="message"
           ></textarea>
 
-          <button class="button modal__button" type="submit">Send</button>
-          <span class="modal__info">* Required Fields</span>
+          <button class="button modal__button subscribe__button" type="submit">Начать</button>
+          <span class="modal__info">* Необходимо заполнить</span>
         </form>
       </div>
       <!-- /.modal__dialog -->
@@ -1158,6 +1158,9 @@
     <!-- /.modal -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

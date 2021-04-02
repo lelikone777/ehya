@@ -26,30 +26,58 @@ $(document).ready(function () {
   var menuButton = document.querySelector(".header-top__menu-button");
   var landings = document.querySelector(".header-top__menu-link--landings");
   var pages = document.querySelector(".header-top__menu-link--pages");
-
-  modalButton.addEventListener("click", function () {
-    console.log("modal");
-  });
-
+  
   menuButton.addEventListener("click", function () {
     console.log("menu");
     document
-      .querySelector(".header-top__menu")
-      .classList.toggle("header-top__menu--visible");
+    .querySelector(".header-top__menu")
+    .classList.toggle("header-top__menu--visible");
   });
-
-
+  
   landings.addEventListener("click", function () {
     console.log("landings");
     document
-      .querySelector(".header-top__landings")
-      .classList.toggle("header-top__landings--visible");
+    .querySelector(".header-top__landings")
+    .classList.toggle("header-top__landings--visible");
   });
-
+  
   pages.addEventListener("click", function () {
     console.log("pages");
     document
-      .querySelector(".header-top__pages")
-      .classList.toggle("header-top__pages--visible");
+    .querySelector(".header-top__pages")
+    .classList.toggle("header-top__pages--visible");
   });
+  
+  
+    var modalButton = $("[data-toggle=modal]");
+    var closeModalButton = $(".modal__close");
+    modalButton.on("click", openModal);
+    closeModalButton.on("click", closeModal);
+  
+  function openModal() {
+    var targetModal = $(this).attr("data-href");
+    $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
+    $(targetModal).find(".modal__dialog").addClass("modal__dialog--visible");
+    document.body.classList.toggle("lock");
+  }
+  
+  function closeModal(event) {
+    event.preventDefault();
+    var modalOverlay = $(".modal__overlay");
+    var modalDialog = $(".modal__dialog");
+    modalOverlay.removeClass("modal__overlay--visible");
+    modalDialog.removeClass("modal__dialog--visible");
+    document.body.classList.remove("lock");
+  }
+  
+  
+
+
+
+
+
+
+
+
+
 });
