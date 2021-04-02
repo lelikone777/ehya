@@ -69,17 +69,17 @@ $(document).ready(function () {
   });
   
   
-    var modalButton = $("[data-toggle=modal]");
-    var closeModalButton = $(".modal__close");
-    modalButton.on("click", openModal);
-    closeModalButton.on("click", closeModal);
+  //   var modalButton = $("[data-toggle=modal]");
+  //   var closeModalButton = $(".modal__close");
+  //   modalButton.on("click", openModal);
+  //   closeModalButton.on("click", closeModal);
   
-  function openModal() {
-    var targetModal = $(this).attr("data-href");
-    $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
-    $(targetModal).find(".modal__dialog").addClass("modal__dialog--visible");
-    document.body.classList.toggle("lock");
-  }
+  // function openModal() {
+  //   var targetModal = $(this).attr("data-href");
+  //   $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
+  //   $(targetModal).find(".modal__dialog").addClass("modal__dialog--visible");
+  //   document.body.classList.toggle("lock");
+  // }
   
   
   

@@ -18,6 +18,102 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   </head>
   <body>
+    <header class="header details__header">
+      <div class="container">
+        <nav class="header-top details__header-top">
+          <a href="https://alekseykalinin.ru/ehya/" class="header-top__logo details__header">
+            <img
+              src="img/header-logo.svg"
+              alt="icon: logo"
+              class="header-top__logo-img"
+            />
+          </a>
+          <!-- /.header-top__logo -->
+          <ul class="header-top__menu">
+            <li class="header-top__menu-item">
+              <a href="#" class="header-top__menu-link">Домой</a>
+            </li>
+            <li class="header-top__menu-item">
+              <a
+                href="#"
+                class="header-top__menu-link header-top__menu-link--drop header-top__menu-link--drop header-top__menu-link--landings"
+                type="menu"
+                >Лендинги
+                <img
+                  src="img/angle-down.svg"
+                  alt="logo: angle-down"
+                  class="header-top__menu-link-img"
+                />
+              </a>
+
+              <ul class="header-top__landings">
+                <li class="header-top__landings-item">
+                  <a href="#">Пункт-1</a>
+                </li>
+                <li class="header-top__landings-item">
+                  <a href="#">Пункт-2</a>
+                </li>
+                <li class="header-top__landings-item">
+                  <a href="#">Пункт-3</a>
+                </li>
+              </ul>
+              <!-- /.header-top__menu-landings -->
+            </li>
+            <li class="header-top__menu-item">
+              <a
+                href="#"
+                class="header-top__menu-link header-top__menu-link--drop header-top__menu-link--pages"
+                >Страницы
+                <img
+                  src="img/angle-down.svg"
+                  alt="logo: angle-down"
+                  class="header-top__menu-link-img"
+                />
+              </a>
+              <ul class="header-top__pages">
+                <li class="header-top__pages-item"><a href="#">Пункт-1</a></li>
+                <li class="header-top__pages-item"><a href="#">Пункт-2</a></li>
+                <li class="header-top__pages-item"><a href="#">Пункт-3</a></li>
+              </ul>
+              <!-- /.header-top__menu-pages -->
+            </li>
+            <li class="header-top__menu-item">
+              <a href="#" class="header-top__menu-link">Помощь</a>
+            </li>
+          </ul>
+          <!-- /.header-top__menu -->
+          <button
+            class="header-top__button"
+            data-toggle="modal"
+            data-href="#rating-modal"
+          >
+            Получить
+          </button>
+          <!-- /.header-top__button -->
+          <div class="header-top__menu-button">
+            <div class="header-top__menu-line"></div>
+            <div class="header-top__menu-line"></div>
+            <div class="header-top__menu-line"></div>
+          </div>
+          <!-- /.header-top__menu-button -->
+        </nav>
+        <!-- /.header-top -->
+      </div>
+      <!-- /.container -->
+      <div class="header-middle">
+        <div class="container header-container-middle">
+          <h1 class="header-middle__title details-main__title">
+            Дешевые авиабилеты - отличный способ сэкономить
+          </h1>
+        </div>
+        <!-- /.header-middle -->
+      </div>
+      <!-- /.container -->
+
+      <img src="img/wave.svg" alt="wave" class="header-wave" />
+    </header>
+    <!-- /.header -->
+
     <section class="top">
       <div class="details-container">
         <p class="top__text top__text-top">
@@ -152,8 +248,76 @@
       </div>
       <!-- /.details-container -->
     </section>
-    <!-- /.details -->
+    <!-- /.top -->
 
+    <section class="middle">
+      <div class="details-container">
+        <div class="rectangle">
+          <img
+            src="img/oval.svg"
+            alt="image: background figure"
+            class="rectangle__oval"
+          />
+          <img src="img/quote.svg" alt="" class="rectangle__quote" />
+        </div>
+
+        <!-- /.rectangle -->
+      </div>
+      <!-- /.details-container -->
+    </section>
+    <!-- /.middle -->
+
+    <div class="modal" id="rating-modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="icon: close" />
+        </a>
+        <h3 class="modal__title modal__message-title">
+          Получайте наши истории на ваш почтовый ящик еженедельно.
+        </h3>
+        <form action="send.php" method="POST" class="form modal__form">
+          <input
+            type="text"
+            class="input modal__input modal__input-name"
+            placeholder="Your Full Name*"
+            name="name"
+            required
+            minlength="2"
+          />
+          <input
+            type="tel"
+            class="input modal__input modal__input-phone input-phone"
+            placeholder="Phone Number*"
+            name="phone"
+            required
+            minlength="2"
+          />
+
+          <input
+            type="email"
+            class="input modal__input modal__input-email"
+            placeholder="Email*"
+            name="email"
+            required
+          />
+
+          <textarea
+            class="message modal__message"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+
+          <button class="button modal__button subscribe__button" type="submit">
+            Начать
+          </button>
+          <span class="modal__info">* Необходимо заполнить</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
