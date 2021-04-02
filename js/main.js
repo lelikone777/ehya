@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 
 
-  const swiper = new Swiper(".swiper-container", {
+  const examples = new Swiper(".examples__slider-wrapper", {
     // Optional parameters
     direction: "horizontal",
     loop: true,
@@ -21,6 +21,25 @@ $(document).ready(function () {
       arrowLeftRight: true,
     },
   });
+    const details = new Swiper(".details__slider-wrapper", {
+      // Optional parameters
+      direction: "horizontal",
+      loop: true,
+      // autoplay: {
+      //   delay: 5000,
+      // },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: ".details__button--next",
+        prevEl: ".details__button--prev",
+      },
+      keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+        arrowLeftRight: true,
+      },
+    });
 
   var modalButton = document.querySelector(".header-top__button");
   var menuButton = document.querySelector(".header-top__menu-button");
