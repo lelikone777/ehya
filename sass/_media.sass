@@ -223,12 +223,15 @@
         bottom: -70px
         transform: translateX(-50%)
     &-bottom
+      &__link
+        &:not(:last-child)
+          margin-bottom: 16px
       flex-direction: column
       &__link
         width: 100%
       &__card
         &-left
-          margin-bottom: 20px
+          
   
   .last
     position: relative
@@ -400,6 +403,13 @@
   .popular
     margin-top: 49px
     &-top
+      margin-bottom: 32px
+      &__button
+        white-space: nowrap
+        bottom: -72px
+        padding: 7px 19px 7px 15px
+        img
+          margin-left: 4px
       &__title
         font-size: 24px
         line-height: 32px
@@ -411,6 +421,49 @@
         text-align: center
         max-width: 100%
         flex-basis: 100%
+    &-bottom
+      &__link
+        &:not(:last-child)
+          margin-bottom: 16px
+      &__card
+        min-height: 320px
+        padding: 32px 23px 13px 20px
+      &__offer
+        margin-left: 0px
+        margin-top: -12px
+        padding: 2px 10px 2px 7px
+      &__title
+        font-size: 20px
+        line-height: 24px
+      &__personal
+        &-left
+          margin-top: 49px
+        &-right
+          margin-top: 8px
+      &__avatar
+        width: 36px
+        height: 36px
+      &__img
+        width: 100%
+        height: 100%
+      &__name
+        font-size: 14px
+        line-height: 20px
+        margin-bottom: 4px
+      &__description
+        font-size: 12px
+        line-height: 16px
+      &__verified
+        &-text
+          font-size: 12px
+          line-height: 16px
+      &__date
+        font-size: 14px
+        line-height: 20px
+        margin-right: -3px
+        margin-top: -8px
+
+
 
 
 
