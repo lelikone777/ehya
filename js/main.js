@@ -17,3 +17,8 @@ const swiper = new Swiper(".swiper-container", {
     arrowLeftRight: true,
   },
 });
+
+var menuButton = document.querySelector(".header-top__menu-button");
+menuButton.addEventListener('click', function() {
+  console.log(11111111111111);
+})
