@@ -203,6 +203,7 @@
     width: 92%
   .header
     &-top
+      position: relative
       &__button
         display: none
         // font-size: 14px
@@ -210,7 +211,18 @@
       &__menu
         display: none
         &--visible
+          z-index: 99
+          position: absolute
           display: flex
+          flex-wrap: wrap
+          align-items: center
+          justify-content: space-around
+          border-radius: 8px
+          width: 100%
+          height: 100%
+          top: 80%
+          background-color: #0D2436
+          border: 1px solid #E5E5E5
         &-button
           margin-right: 9px
           margin-top: 5px
