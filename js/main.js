@@ -34,6 +34,7 @@ $(document).ready(function () {
     .classList.toggle("header-top__menu--visible");
   });
   
+  
   landings.addEventListener("click", function () {
     console.log("landings");
     document
@@ -61,14 +62,7 @@ $(document).ready(function () {
     document.body.classList.toggle("lock");
   }
   
-  function closeModal(event) {
-    event.preventDefault();
-    var modalOverlay = $(".modal__overlay");
-    var modalDialog = $(".modal__dialog");
-    modalOverlay.removeClass("modal__overlay--visible");
-    modalDialog.removeClass("modal__dialog--visible");
-    document.body.classList.remove("lock");
-  }
+  
   
   
 

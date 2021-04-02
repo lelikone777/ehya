@@ -1,0 +1,243 @@
+.top
+  &__text
+    font-family: Open Sans, sans-serif
+    font-style: normal
+    font-weight: normal
+    color: #5A7184
+    &-top
+      font-size: 20px
+      line-height: 32px
+      margin-bottom: 20px
+    &-middle
+      font-size: 16px
+      line-height: 26px
+      margin-bottom: 16px
+    &-bottom
+      font-size: 16px
+      line-height: 28px
+      margin-bottom: 104px     
+  &__personal
+    margin-bottom: 40px
+    z-index: 0
+    display: flex
+  &__img
+    margin-right: 12px
+    width: 40px
+    height: 40px
+    border-radius: 50%
+  &__avatar
+    margin-right: 12px
+    width: 40px
+    height: 40px
+    border-radius: 50%
+  &__author
+    font-family: Open Sans, sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    margin-right: auto
+  &__name
+    font-family: Open Sans, sans-serif
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    margin-bottom: 4px
+    color: $light
+  &__verified
+    display: flex
+    margin-right: 8px
+  &__check
+    margin-right: 8px
+  &__name
+    color: $dark-blue
+  &__icon
+    width: 16px
+  &__description
+    font-family: Open Sans, sans-serif
+    color: $dark-grey
+    font-style: italic
+    font-weight: normal
+    font-size: 14px
+    line-height: 19px
+    white-space: nowrap
+  &__date
+    font-family: Open Sans, sans-serif
+    align-items: center
+    display: flex
+    white-space: nowrap
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 20px
+    color: #5A7184
+  &__picture
+    width: 100%
+    height: 360px
+    background-image: url('../img/details-top.png')
+    background-repeat: no-repeat
+    background-position: cover cover
+    background-size: cover
+    border-radius: 16px
+    margin-bottom: 12px
+    &-text
+      display: block
+      font-family: Open Sans, sans-serif
+      color: #5A7184
+      text-align: center
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      margin-bottom: 20px
+  &__title
+    font-family: Roboto, sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 48px
+    color: #183B56
+  &__subtitle
+    font-family: Roboto, sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    line-height: 32px
+    letter-spacing: 0.2px
+    color: #183B56
+    &-entertainment
+      margin-bottom: 4px
+    &-eat
+      margin-bottom: 16px
+
+.details
+  &__slider
+    width: 100%
+    min-height: 380px
+    position: relative
+    &-wrapper
+      box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.03)
+      border-radius: 16px
+      overflow: hidden
+  &__button
+    position: absolute
+    top: 42.5%
+    z-index: 99
+    width: 55px
+    height: 55px
+    border: none
+    cursor: pointer
+    background-repeat: no-repeat
+    background-position: center
+    &--prev
+      background-image: url('../img/slider-left.svg')
+      left: -28px
+    &--next
+      background-image: url('../img/slider-right.svg')
+      right: -25px
+    &::active, &::focus
+      outline: none
+  &__slide  
+    border-radius: 16px
+    overflow: hidden
+  &__card
+    border-radius: 16px
+    overflow: hidden
+    display: flex
+    min-height: 380px
+    background-color: $light
+  &__image
+    width: 100%
+    height: 100%
+  &__img
+    height: 100%
+    width: 100%
+  &__info
+    width: 50%
+    padding: 36px 48px 32px 32px
+  &__offer
+    margin-bottom: 22px
+    margin-left: 1px
+    font-family: Open Sans, sans-serif
+    border-radius: 22px
+    font-weight: 600
+    font-size: 14px
+    line-height: 20px
+    background-color: rgba(21, 101, 216, 0.1)
+    padding: 2px 11px 2px 14px
+    font-style: normal
+    font-size: 16px
+    line-height: 22px
+    color: $primary
+  &__title
+    margin-top: 23px
+    margin-bottom: 20px
+    font-family: Roboto, sans-serif
+    color: $dark-blue
+    font-style: normal
+    font-weight: bold
+    font-size: 31px
+    line-height: 48px
+  &__text
+    max-width: 480px
+    margin-bottom: 43px
+    font-family: Open Sans, sans-serif
+    color: $dark-grey
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 32px
+  &__personal
+      z-index: 0
+      display: flex
+  
+  &-avatar
+    margin-right: 12px
+    width: 40px
+    height: 40px
+    border-radius: 50%
+  &-author
+    font-family: Open Sans, sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    margin-right: auto
+  &__name
+    font-family: Open Sans, sans-serif
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    margin-bottom: 4px
+  &__personal
+    display: flex
+  &__verified
+    display: flex
+    margin-right: 8px
+    &-img
+      margin-right: 8px
+    &-icon
+      width: 16px
+    &-text
+      color: $dark-grey
+      font-family: Open Sans, sans-serif
+      font-style: italic
+      font-weight: normal
+      font-size: 14px
+      line-height: 19px
+      white-space: nowrap
+    &-date
+      font-family: Open Sans, sans-serif
+      align-items: center
+      display: flex
+      white-space: nowrap
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      color: $light-grey
+  &__name
+    color: $dark-blue
+    
+.examples__slide
+  width: 100%
