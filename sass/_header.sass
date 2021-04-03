@@ -69,6 +69,8 @@
       margin-left: auto
       margin-top: 2px
       &-item
+        &:hover
+          color: $primary
         &:not(:last-child)
           margin-right: 18px
         &:first-child
@@ -81,6 +83,8 @@
         font-weight: 600
         font-size: 16px
         line-height: 22px
+        &:hover
+          color: $primary
         &--drop 
           display: flex
           align-items: center
@@ -102,6 +106,9 @@
       cursor: pointer
       &-button
         display: none
+      &:hover
+          color: $primary
+          border: 2px solid $primary
    
 
 
@@ -157,6 +164,9 @@
         color: $light
         border: none
         cursor: pointer
+        &:hover
+          color: $light
+          background-color: $dark-blue
       &-icon
         margin-right: 16px
     &__tag
@@ -184,7 +194,10 @@
       border-radius: 4px
       padding: 6px 18px
       text-decoration: none
-      &::hover
+      &:hover
+          color: $primary
+          border: 1px solid $primary
+
         
 
 
