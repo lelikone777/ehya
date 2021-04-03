@@ -13,8 +13,11 @@
     margin-left: 10px
     margin-left: 64px
   &__header
-    &-top
-      
+    &-logo
+      margin-left: -10px
+    &-button
+      margin-right: 9px
+
 .top
   &__text
     font-family: Open Sans, sans-serif
@@ -29,15 +32,24 @@
       font-size: 16px
       line-height: 26px
       margin-bottom: 16px
+      &--mb8
+        margin-bottom: 8px
     &-bottom
       font-size: 16px
       line-height: 28px
+      &--left
+        text-align-last: left
       &--mb104     
         margin-bottom: 104px
       &--mb10
+        text-align: left
         margin-bottom: 10px
       &--mb28
+        text-align: left
         margin-bottom: 28px
+        max-width: 749px
+      &--mb36
+        margin-bottom: 36px
   &__personal
     margin-bottom: 40px
     z-index: 0
@@ -112,6 +124,8 @@
       font-size: 14px
       line-height: 20px
       margin-bottom: 20px
+      &--mb48 
+        margin-bottom: 48px
   &__title
     font-family: Roboto, sans-serif
     font-style: normal
@@ -119,6 +133,9 @@
     font-size: 36px
     line-height: 48px
     color: #183B56
+    letter-spacing: 0.2px
+    &--mb24
+      margin-bottom: 24px
   &__subtitle
     font-family: Roboto, sans-serif
     font-style: normal
@@ -187,6 +204,7 @@
 
 .rectangle
   position: relative
+  padding: 129px 64px 75px 64px
   margin-bottom: 116px
   background-color: #1565D8
   border-radius: 16px
@@ -204,3 +222,140 @@
     right: 50%
     top: 57px
     transform: translateX(50%)
+  &__title
+    font-family: Roboto, sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 60px
+    text-align: center
+    letter-spacing: 0.09px
+    color: #FFFFFF
+    margin-bottom: 16px
+  &__text
+    font-family: Open Sans, sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 25px
+    text-align: center
+    color: #FFFFFF
+  &__avatar
+    border-radius: 8px
+    width: 120px
+    height: 120px
+    position: absolute
+    left: 50%
+    bottom: -60px
+    transform: translateX(-50%)
+
+.details
+  &__cards
+    margin-bottom: 12px
+    display: flex
+    flex-wrap: nowrap
+    justify-content: space-between
+    &-left
+      width: 48%
+      &-1
+        background-image: url('../img/details-card-left.jpg')
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center center
+        height: 480px 
+        border-radius: 16px
+    &-right
+      width: 48%
+      display: flex
+      flex-direction: column 
+      justify-content: space-between
+      height: 480px    
+      &-1
+        background-image: url('../img/details-card-right-1.jpg')
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center center  
+        height: 225px
+        width: 360px
+        border-radius: 16px
+      &-2
+        background-image: url('../img/details-card-right-2.jpg')
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center center  
+        height: 225px
+        width: 360px
+        border-radius: 16px
+
+.bottom
+  position: relative
+  padding-bottom: 152px
+  &__personal
+    margin-bottom: 66px
+    padding-top: 21px
+    padding-bottom: 14px
+    border-top: 1px solid #E5EAF4
+    border-bottom: 1px solid #E5EAF4
+
+
+.comments
+  padding-bottom: 28px
+  display: flex
+  justify-content: space-between
+  &__author
+    display: flex
+  &__avatar
+    margin-right: 12px
+  &__info
+    display: flex
+    flex-direction: column
+  &__name
+    font-family: Open Sans, sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    color: #183B56
+  &__date
+    font-family: Open Sans
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 20px
+    color: #5A7184
+  &__text
+    border-radius: 0 8px 8px 8px
+    max-width: 555px
+    padding: 20px
+    background-color: rgba(179, 186, 197, 0.15)
+    font-family: Open Sans, sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 28px
+    color: #5A7184
+  &__bottom
+    margin-top: 32px
+
+
+.details__search
+  width: 100%
+  height: 64px
+  margin-bottom: 109px
+  border: 1px solid #E5EAF4
+  &-button
+    padding: 9px 4px
+    font-family: Open Sans, sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    text-align: center
+    color: #FFFFFF
+
+.details__wave-dark
+  bottom: -2px
+
+
+
+
