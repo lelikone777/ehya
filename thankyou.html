@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ehya* - Отдел Новостей - Детали</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <header class="header details-header">
+      <div class="container">
+        <nav class="header-top details-header__top">
+          <a
+            href="https://alekseykalinin.ru/ehya/"
+            class="header-top__logo details-header__logo"
+            S
+          >
+            <img
+              src="img/header-logo.svg"
+              alt="icon: logo"
+              class="header-top__logo-img details-header__logo-img"
+            />
+          </a>
+          <!-- /.header-top__logo -->
+          <ul class="header-top__menu details-header__menu">
+            <li class="header-top__menu-item details-header__menu-item">
+              <a
+                href="#"
+                class="header-top__menu-link details-header__menu-link"
+                >Домой</a
+              >
+            </li>
+            <li class="header-top__menu-item details-header__menu-item">
+              <a
+                href="#"
+                class="header-top__menu-link header-top__menu-link--drop header-top__menu-link--landings details-header__menu-link"
+                >Лендинги
+                <img
+                  src="img/angle-down.svg"
+                  alt="logo: angle-down"
+                  class="header-top__menu-link-img details-header__menu-link-img"
+                />
+              </a>
+
+              <ul class="header-top__landings">
+                <li class="header-top__landings-item">
+                  <a href="#">Пункт-1</a>
+                </li>
+                <li class="header-top__landings-item">
+                  <a href="#">Пункт-2</a>
+                </li>
+                <li class="header-top__landings-item">
+                  <a href="#">Пункт-3</a>
+                </li>
+              </ul>
+              <!-- /.header-top__menu-landings -->
+            </li>
+            <li class="header-top__menu-item">
+              <a
+                href="#"
+                class="header-top__menu-link header-top__menu-link--drop header-top__menu-link--pages"
+                >Страницы
+                <img
+                  src="img/angle-down.svg"
+                  alt="logo: angle-down"
+                  class="header-top__menu-link-img"
+                />
+              </a>
+              <ul class="header-top__pages">
+                <li class="header-top__pages-item"><a href="#">Пункт-1</a></li>
+                <li class="header-top__pages-item"><a href="#">Пункт-2</a></li>
+                <li class="header-top__pages-item"><a href="#">Пункт-3</a></li>
+              </ul>
+              <!-- /.header-top__menu-pages -->
+            </li>
+            <li class="header-top__menu-item">
+              <a href="#" class="header-top__menu-link">Помощь</a>
+            </li>
+          </ul>
+          <!-- /.header-top__menu -->
+          <button
+            class="header-top__button details__header-button"
+            data-toggle="modal"
+            data-href="#rating-modal"
+          >
+            Получить
+          </button>
+          <!-- /.header-top__button -->
+          <div class="header-top__menu-button">
+            <div class="header-top__menu-line"></div>
+            <div class="header-top__menu-line"></div>
+            <div class="header-top__menu-line"></div>
+          </div>
+          <!-- /.header-top__menu-button -->
+        </nav>
+        <!-- /.header-top -->
+      </div>
+      <!-- /.container -->
+      <div class="header-middle">
+        <div class="container header-container-middle">
+          <h1 class="header-middle__title details-main__title">
+            Дешевые авиабилеты - отличный способ сэкономить
+          </h1>
+        </div>
+        <!-- /.header-middle -->
+      </div>
+      <!-- /.container -->
+
+      <img src="img/wave.svg" alt="wave" class="header-wave" />
+    </header>
+    <!-- /.header -->
+    <div class="container">
+      <h1 class="top__title">Письмо отправлено</h1>
+      <p class="top__text top__text-top">Скоро с вами свяжуться</p>
+             <a
+            href="https://alekseykalinin.ru/ehya/details.html"
+            class="button button-light popular-top__button"
+            >на главную
+            <img
+              src="img/angle-right.svg"
+              alt="logo: angle right"
+              class="popular-top__image"
+            />
+          </a>
+    </div>
+    <!-- /.container -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="bottom thankyou-bottom">
+
+      <img
+        src="img/wave-dark.svg"
+        alt="wave"
+        class="all-wave details__wave-dark"
+      />
+    </section>
+    <!-- /.bottom -->
+
+    <section class="subscribe details__subscribe">
+      <div class="container">
+        <div class="subscribe-wrapper details__subscribe-wrapper">
+          <div class="subscribe-left details__subscribe-left">
+            <h2 class="subscribe__title details__subscribe-title">
+              Получайте наши истории на ваш почтовый ящик еженедельно.
+            </h2>
+            <form
+              class="subscribe__form details__subscribe-form"
+              action="send.php"
+              method="POST"
+            >
+              <input
+                placeholder="Ваш Email"
+                type="email"
+                name="email"
+                class="subscribe__input details__subscribe-input"
+              />
+              <button
+                type="submit"
+                class="button button-blue subscribe__button details__subscribe-button"
+              >
+                Начать
+              </button>
+            </form>
+            <p class="subscribe__text details-subscribe__text">
+              Получите ответ завтра, если отправите его до 9 вечера сегодня.
+              Если мы получили после 9 вечера, мы получим ответ на следующий
+              день.
+            </p>
+          </div>
+          <!-- /.subscribe-left -->
+          <div class="subscribe-right">
+            <div class="subscribe__card">
+              <div class="subscribe__picture">
+                <img
+                  src="img/subscribe-img.png"
+                  alt="img: joystick"
+                  class="subscribe__img"
+                />
+              </div>
+              <div class="subscribe__card-info">
+                <div class="subscribe__card-title">
+                  Лучшие статьи каждую неделю
+                </div>
+                <p class="subscribe__card-text">
+                  Наши предложения по страхованию везде одинаковы.
+                </p>
+              </div>
+            </div>
+            <!-- /.sunscribe__card -->
+            <img
+              class="subscribe__square-blue"
+              src="img/square-blue.svg"
+              alt="#"
+            />
+            <img
+              class="subscribe__square-grey"
+              src="img/square-grey.svg"
+              alt="#"
+            />
+          </div>
+          <!-- /.subscribe-right -->
+        </div>
+        <!-- /.subscribe-wrapper -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.subscribe -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper details__footer-wrapper">
+          <div class="footer__info">
+            <a href="https://alekseykalinin.ru/ehya/" class="footer__logo">
+              <img
+                src="img/header-logo.svg"
+                alt="icon: logo"
+                class="footer__logo-img"
+              />
+            </a>
+            <!-- /.footer__logo -->
+            <p class="footer__info-text">
+              Создайте современный и креативный веб-сайт с crealand
+            </p>
+            <div class="footer__info-social details__info-social">
+              <a href="https://www.google.ru/" class="footer__info-link">
+                <img src="img/google.svg" alt="logo: google" /></a
+              ><a href="https://twitter.com/?lang=ru" class="footer__info-link"
+                ><img src="img/twitter.svg" alt="logo: twitter" /></a
+              ><a href="https://www.instagram.com/" class="footer__info-link"
+                ><img src="img/instagram.svg" alt="logo: instagram" /></a
+              ><a href="https://ru.linkedin.com/" class="footer__info-link"
+                ><img src="img/linkedin.svg" alt="logo: linkedin" /></a
+              ><a href="https://www.youtube.com/" class="footer__info-link">
+                <img src="img/youtube.svg" alt="logo: youtube"
+              /></a>
+            </div>
+            <!-- /.footer__info-social -->
+          </div>
+          <!-- /.footer__info -->
+          <ul class="footer__menu footer__menu-1">
+            <h3 class="footer__menu-title">Продукт</h3>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Лендинг</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Функции</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Документация</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Скидки</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Расценки</a>
+            </li>
+          </ul>
+          <ul class="footer__menu footer__menu-2">
+            <h3 class="footer__menu-title">Сервисы</h3>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Документация</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Дизайн</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Темы</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Иллюстрации</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">UI Kit</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link"></a>
+            </li>
+          </ul>
+          <ul class="footer__menu footer__menu-3">
+            <h3 class="footer__menu-title">Компания</h3>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">О нас</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Условия </a>
+            </li>
+            <li class="footer__menu-item footer__menu-item--desktop">
+              <a href="#" class="footer__menu-link"
+                >Политика конфиденциальности
+              </a>
+            </li>
+            <li class="footer__menu-item footer__menu-item--mobile">
+              <a href="#" class="footer__menu-link">Privacy Policy </a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Careers</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="" class="footer__menu-link"></a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="" class="footer__menu-link"></a>
+            </li>
+          </ul>
+          <ul class="footer__menu footer__menu-4">
+            <h3 class="footer__menu-title">Более</h3>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Документация</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Лицензия</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#" class="footer__menu-link">Измененния</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.footer-wrapper -->
+        <div class="footer__copyright">
+          <img
+            class="footer__copyright-logo"
+            src="img/heart.svg"
+            alt="icon: heart"
+          />
+          <span class="footer__copyright-text"
+            >Copyright © 2019. Crafted with love.</span
+          >
+        </div>
+        <!-- /.footer__copyright -->
+      </div>
+      <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
+
+    <div class="modal" id="rating-modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="icon: close" />
+        </a>
+        <h3 class="modal__title modal__message-title">
+          Получайте наши истории на ваш почтовый ящик еженедельно.
+        </h3>
+        <form action="send.php" method="POST" class="form modal__form">
+          <input
+            type="text"
+            class="input modal__input modal__input-name"
+            placeholder="Ваше полное имя*"
+            name="name"
+            required
+            minlength="2"
+          />
+          <input
+            type="tel"
+            class="input modal__input modal__input-phone input-phone"
+            placeholder="Номер телефона*"
+            name="phone"
+            required
+            minlength="2"
+          />
+
+          <input
+            type="email"
+            class="input modal__input modal__input-email"
+            placeholder="Email*"
+            name="email"
+            required
+          />
+
+          <textarea
+            class="message modal__message"
+            placeholder="Введите ваше сообщение"
+            name="message"
+          ></textarea>
+
+          <button class="button modal__button subscribe__button" type="submit">
+            Отправить
+          </button>
+          <span class="modal__info">* Необходимо заполнить</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
