@@ -14,6 +14,29 @@
       &__search
         &-form
           width: 100%
+  
+  .last
+    &__personal
+      &-center
+        margin-top: 80px
+      &-left
+        margin-top: 50px
+  
+  .all
+    &-top
+      &__personal
+        &-left
+          margin-top: 33px
+    &-bottom
+      &__personal
+        &-center
+          margin-top: 45px
+  
+  .popular
+    &-bottom
+      &__personal
+        &-left
+          margin-top: 40px
 
   .examples
     &__slider
@@ -31,7 +54,7 @@
     &__square-blue 
       right: 7%
       top: -5%
-
+    
   .footer
     &-wrapper
     &__info
@@ -88,6 +111,9 @@
       &__title
         font-size: 27px    
         line-height: 34px
+      &__personal
+        &-left
+          margin-top: 70px
   
   .last
     &-top
@@ -106,6 +132,8 @@
     &__personal
       flex-direction: column
       align-items: center
+      &-left
+        margin-top: 17px
       &-center
         margin-top: 40px
     &__avatar
@@ -151,6 +179,9 @@
       &__title
         font-size: 27px    
         line-height: 34px
+      &__personal
+        &-left
+          margin-top: 66px
     &-bottom
       &__title
         font-size: 22px
@@ -163,6 +194,8 @@
         align-items: center
         &-center
           margin-top: 40px
+        &-right
+          margin-top: 45px
       &__avatar
         margin-right: 0
         margin-bottom: 5px
@@ -262,10 +295,12 @@
         bottom: -70px
         transform: translateX(-50%)
     &-bottom
+      flex-direction: column
+      &__personal
+        margin-top: 50px
       &__link
         &:not(:last-child)
           margin-bottom: 16px
-      flex-direction: column
       &__link
         width: 100%
       &__card
@@ -292,6 +327,7 @@
     &__text
       overflow-Y: auto
     &__personal
+      margin-top: 20px
       flex-direction: row
       align-items: center
     &-center
@@ -320,12 +356,16 @@
   .all
     &-top
       flex-direction: column
+      &__personal
+        margin-top: 20px
       &__link
         width: 100%
         &-left
           margin-bottom: 16px
     &-bottom
       flex-direction: column
+      &__personal
+        margin-top: 20px
       &__link
         width: 100%
         &:not(:last-child)
