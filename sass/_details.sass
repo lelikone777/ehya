@@ -280,7 +280,19 @@
         width: 750px
         height: 360px
         background-image: url('../img/slide-1.png')
-  &__search
+  &-search
+    width: 100%
+    height: 64px
+    margin-bottom: 109px
+    border: 1px solid #E5EAF4
+    background-color: #fff
+    border-radius: 8px
+    padding: 8px 8px 8px 20px
+    min-height: 20px
+    &-group
+      height: 100%
+      display: flex
+      align-items: center
     &-button
       padding: 9px 4px
       font-family: Open Sans, sans-serif
@@ -294,6 +306,19 @@
       color: #FFFFFF
       border: none
       cursor: pointer
+    &-icon
+      margin-right: 16px
+    &-input
+      border: none
+      outline: none
+      width: 83%
+      vertical-align: middle
+      &::placeholder
+        font-family: Open Sans, sans-serif
+        font-size: 14px
+        line-height: 20px
+        letter-spacing: -1.3px
+
 
 .rectangle
   position: relative
@@ -435,20 +460,7 @@
     margin-top: 32px
 
 
-.details__search
-  width: 100%
-  height: 64px
-  margin-bottom: 109px
-  border: 1px solid #E5EAF4
-  &-button
-    padding: 9px 4px
-    font-family: Open Sans, sans-serif
-    font-style: normal
-    font-weight: bold
-    font-size: 16px
-    line-height: 22px
-    text-align: center
-    color: #FFFFFF
+
 
 .details__wave-dark
   bottom: -2px
