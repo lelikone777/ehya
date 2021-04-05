@@ -55,27 +55,48 @@
       right: 7%
       top: -5%
     
-  .footer
-    &-wrapper
-    &__info
-      margin-left: 0
-      margin-bottom: 96px
-      width: 27%
-    &__menu
-      &-1
-        width: 27%
-      &-2
-        width: 30%
-        margin-right: 0px
-      &-3
-        margin-right: 117px
-      &-4
-        width: 30%
-    &__copyright
-      padding-bottom: 96px
+  // .footer
+  //   &-wrapper
+  //   &__info
+  //     margin-left: 0
+  //     margin-bottom: 96px
+  //     width: 27%
+  //   &__menu
+  //     &-1
+  //       width: 27%
+  //     &-2
+  //       width: 30%
+  //       margin-right: 0px
+  //     &-3
+  //       margin-right: 117px
+  //     &-4
+  //       width: 30%
+  //   &__copyright
+  //     padding-bottom: 96px
     
 
-
+  .footer
+    &-wrapper
+      display: grid
+      grid-template-columns: 30% 1fr 1fr 1fr 1fr
+      grid-template-rows: 1fr  
+      grid-gap: 20px
+    &__info
+      grid-column: 1/2
+      grid-row: 1/2
+      margin: 0
+    &__menu
+      margin: 0
+      &-1
+        grid-column: 2/3
+      &-2
+        grid-column: 3/4
+      &-3
+        grid-column: 4/5
+      &-4
+        grid-column: 5/6
+      
+    
 
 
 
@@ -223,6 +244,35 @@
     &__menu
       &-3
         margin-right: 50px
+
+  .footer
+    &-wrapper
+      display: grid
+      grid-template-columns: 30% 1fr 1fr 1fr 1fr
+      grid-template-rows: 1fr 1fr 
+      grid-gap: 20px
+    &__info
+      grid-column: 1/2
+      grid-row: 1/2
+      margin: 0
+    &__menu
+      margin: 0
+      &-1
+        grid-column: 2/4
+        grid-row: 1/2
+      &-2
+        grid-column: 4/6
+        grid-row: 1/2
+      &-3
+        grid-column: 2/4
+        grid-row: 2/3
+      &-4
+        grid-column: 4/6
+        grid-row: 2/3
+
+
+
+
   
   .footer__copyright
     padding-bottom: 0
@@ -860,6 +910,7 @@
     min-height: 668px
     padding-bottom: 0
     &-wrapper
+      display: flex
       padding-top: 0
       padding-bottom: 0
       border: none
@@ -874,12 +925,18 @@
         margin-top: 32px
     &__menu
       &-1
+        width: 27%
         margin-left: 8px
-        margin-right: 66px
-        margin-bottom: 39px
+        margin-right: 46px
+        margin-bottom: 19px
+      &-2
+        width: 30%
+        margin-right: 0px
       &-3
-        margin-right: 56px
+        margin-right: 36px
         margin-left: 8px
+      &-4
+        width: 30%
       &-title
         margin-bottom: 20px
         font-size: 16px
@@ -895,6 +952,7 @@
         font-size: 14px
         line-height: 20px
     &__info
+      width: 27%
       order: 1
       flex-basis: 100%
       justify-self: center
@@ -913,13 +971,32 @@
         margin: 0 auto
     &__copyright
       display: none
+      padding-bottom: 96px
 
   .modal__dialog
     min-width: 300px
     padding: 33px 10%
       
 
-
+  // .footer
+  //   &-wrapper
+  //   &__info
+  //     margin-left: 0
+  //     margin-bottom: 96px
+  //     width: 27%
+  //   &__menu
+  //     &-1
+  //       width: 27%
+  //     &-2
+  //       width: 30%
+  //       margin-right: 0px
+  //     &-3
+  //       margin-right: 117px
+  //     &-4
+  //       width: 30%
+  //   &__copyright
+  //     padding-bottom: 96px
+    
 
 
 
@@ -995,6 +1072,12 @@
       &:hover
         color: $primary
         border: 2px solid $primary
+  
+  .footer
+    &__menu
+      &-link
+        &:hover
+          color: $light
 
   .modal
     &__button
