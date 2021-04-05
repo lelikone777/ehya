@@ -11,8 +11,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css
 "
     />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@700&display=swap"
@@ -105,8 +105,8 @@
       <div class="header-middle">
         <div class="container header-container-middle">
           <h1 class="thankyou-title">Письмо отправлено</h1>
-                <p class="thankyou-text">Скоро с вами свяжуться</p>
-             <a
+          <p class="thankyou-text">Скоро с вами свяжуться</p>
+          <a
             href="https://alekseykalinin.ru/ehya/"
             class="button thankyou-button"
             >на главную
@@ -117,8 +117,6 @@
             /> -->
           </a>
 
-
- 
           <!-- /.header-middle__search-form -->
           <div class="header-middle__tag">
             <div class="header-middle__popular">Популярные Тэги :</div>
@@ -147,13 +145,7 @@
     </header>
     <!-- /.header -->
 
-  
-
-
-
-
-
-  <section class="last">
+    <section class="last">
       <div class="container">
         <div class="last-wrapper">
           <div class="last-top">
@@ -161,7 +153,9 @@
             <p class="last-top__text">
               Вот чем мы занимались в последнее время.
             </p>
-            <a href="https://alekseykalinin.ru/ehya/details.html" class="button button-light last-top__button"
+            <a
+              href="https://alekseykalinin.ru/ehya/details.html"
+              class="button button-light last-top__button"
               >Смотреть все
               <img
                 src="img/angle-right.svg"
@@ -299,16 +293,7 @@
     </section>
     <!-- /.last -->
 
-
-
-
-
-
-
-
-
     <div class="bottom thankyou-bottom">
-
       <img
         src="img/wave-dark.svg"
         alt="wave"
@@ -317,7 +302,6 @@
     </div>
     <!-- /.bottom -->
 
- 
     <section class="subscribe details-subscribe">
       <div class="container">
         <div class="subscribe-wrapper details-subscribe-wrapper">
@@ -385,7 +369,7 @@
     </section>
     <!-- /.subscribe -->
 
-       <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer-wrapper details-footer-wrapper">
           <div class="footer__info">
@@ -510,7 +494,7 @@
       <!-- /.container -->
     </footer>
     <!-- /.footer -->
-   <div class="modal" id="rating-modal">
+    <div class="modal" id="rating-modal">
       <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
       <div class="modal__dialog">
@@ -521,31 +505,35 @@
           Получайте наши истории на ваш почтовый ящик еженедельно
         </h3>
         <form action="send.php" method="POST" class="form modal__form">
-          <div class="modal__input-wrapper">     <input
-            type="text"
-            class="input modal__input modal__input-name"
-            placeholder="Ваше полное имя*"
-            name="name"
-            required
-            minlength="2"
-          /></div>
-     <div class="modal__input-wrapper"><input
-            type="tel"
-            class="input modal__input modal__input-phone input-phone"
-            placeholder="Номер телефона*"
-            name="phone"
-            required
-            minlength="2"
-          /></div>
-          <div class="modal__input-wrapper">    <input
-            type="email"
-            class="input modal__input modal__input-email"
-            placeholder="Email*"
-            name="email"
-            required
-          /></div>
-
-      
+          <div class="modal__input-wrapper">
+            <input
+              type="text"
+              class="input modal__input modal__input-name"
+              placeholder="Ваше полное имя*"
+              name="name"
+              required
+              minlength="2"
+            />
+          </div>
+          <div class="modal__input-wrapper">
+            <input
+              type="tel"
+              class="input modal__input modal__input-phone input-phone"
+              placeholder="Номер телефона*"
+              name="phone"
+              required
+              minlength="2"
+            />
+          </div>
+          <div class="modal__input-wrapper">
+            <input
+              type="email"
+              class="input modal__input modal__input-email"
+              placeholder="Email*"
+              name="email"
+              required
+            />
+          </div>
 
           <textarea
             class="message modal__message"
