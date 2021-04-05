@@ -18,7 +18,7 @@ $(document).ready(function () {
       arrowLeftRight: true,
     },
   });
-  const details = new Swiper(".details__slider-wrapper", {
+  const details = new Swiper(".details-slider-wrapper", {
     // Optional parameters
     direction: "horizontal",
     loop: true,
@@ -28,8 +28,8 @@ $(document).ready(function () {
 
     // Navigation arrows
     navigation: {
-      nextEl: ".details__button--next",
-      prevEl: ".details__button--prev",
+      nextEl: ".details-button--next",
+      prevEl: ".details-button--prev",
     },
     keyboard: {
       enabled: true,
@@ -72,7 +72,7 @@ $(document).ready(function () {
       landingsMenu.classList.remove("header-top__landings--visible");
     }
   });
-  
+
   var modalButton = $("[data-toggle=modal]");
   console.log(modalButton);
   modalButton.on("click", openModal);
@@ -87,41 +87,41 @@ $(document).ready(function () {
     $(targetModal).find(".modal__dialog").addClass("modal__dialog--visible");
     document.body.classList.toggle("lock");
   }
-   function closeModal(event) {
-     event.preventDefault();
-     var modalDialog = $(".modal__dialog");
-     modalOverlay.removeClass("modal__overlay--visible");
-     modalDialog.removeClass("modal__dialog--visible");
-     document.body.classList.remove("lock");
-   }
+  function closeModal(event) {
+    event.preventDefault();
+    var modalDialog = $(".modal__dialog");
+    modalOverlay.removeClass("modal__overlay--visible");
+    modalDialog.removeClass("modal__dialog--visible");
+    document.body.classList.remove("lock");
+  }
 
-   $(".input-phone").mask("+7 (000) 000-00-00");
-    $(".form").each(function () {
-      $(this).validate({
-        errorClass: "invalid",
-        rules: {
-          phone: {
-            required: true,
-            minlength: 16,
-          },
-          email: {
-            minlength: 6,
-          },
+  $(".input-phone").mask("+7 (000) 000-00-00");
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      rules: {
+        phone: {
+          required: true,
+          minlength: 16,
         },
-        messages: {
-          name: {
-            required: "Напишите ваше имя",
-            minlength: "минимум 2 символа",
-          },
-          email: {
-            required: "Нужен адрес электронной почты",
-            email: "Должен быть в формате: name@domain.com",
-          },
-          phone: {
-            required: "Телефонный номер необходим",
-            minlength: "Введите корректный номер телефона",
-          },
+        email: {
+          minlength: 6,
         },
-      });
+      },
+      messages: {
+        name: {
+          required: "Напишите ваше имя",
+          minlength: "минимум 2 символа",
+        },
+        email: {
+          required: "Нужен адрес электронной почты",
+          email: "Должен быть в формате: name@domain.com",
+        },
+        phone: {
+          required: "Телефонный номер необходим",
+          minlength: "Введите корректный номер телефона",
+        },
+      },
     });
+  });
 });
