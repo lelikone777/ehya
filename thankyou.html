@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ehya* - Отдел Новостей - Детали</title>
+    <title>Ehya* - Отдел Новостей</title>
     <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css
+"
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -18,38 +19,31 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   </head>
   <body>
-    <header class="header details-header">
-      <div class="container">
-        <nav class="header-top details-header__top">
-          <a
-            href="https://alekseykalinin.ru/ehya/"
-            class="header-top__logo details-header__logo"
-            S
-          >
+    <header class="header">
+      <div class="container header-container-top">
+        <nav class="header-top">
+          <a href="https://alekseykalinin.ru/ehya/" class="header-top__logo">
             <img
               src="img/header-logo.svg"
               alt="icon: logo"
-              class="header-top__logo-img details-header__logo-img"
+              class="header-top__logo-img"
             />
           </a>
           <!-- /.header-top__logo -->
-          <ul class="header-top__menu details-header__menu">
-            <li class="header-top__menu-item details-header__menu-item">
-              <a
-                href="#"
-                class="header-top__menu-link details-header__menu-link"
-                >Домой</a
-              >
+          <ul class="header-top__menu">
+            <li class="header-top__menu-item">
+              <a href="#" class="header-top__menu-link">Домой</a>
             </li>
-            <li class="header-top__menu-item details-header__menu-item">
+            <li class="header-top__menu-item">
               <a
                 href="#"
-                class="header-top__menu-link header-top__menu-link--drop header-top__menu-link--landings details-header__menu-link"
+                class="header-top__menu-link header-top__menu-link--drop header-top__menu-link--drop header-top__menu-link--landings"
+                type="menu"
                 >Лендинги
                 <img
                   src="img/angle-down.svg"
                   alt="logo: angle-down"
-                  class="header-top__menu-link-img details-header__menu-link-img"
+                  class="header-top__menu-link-img"
                 />
               </a>
 
@@ -90,7 +84,7 @@
           </ul>
           <!-- /.header-top__menu -->
           <button
-            class="header-top__button details__header-button"
+            class="header-top__button"
             data-toggle="modal"
             data-href="#rating-modal"
           >
@@ -109,9 +103,40 @@
       <!-- /.container -->
       <div class="header-middle">
         <div class="container header-container-middle">
-          <h1 class="header-middle__title details-main__title">
-            Дешевые авиабилеты - отличный способ сэкономить
-          </h1>
+          <h1 class="thankyou__title">Письмо отправлено</h1>
+                <p class="thankyou__text" ">Скоро с вами свяжуться</p>
+             <a
+            href="https://alekseykalinin.ru/ehya/details.html"
+            class="button thankyou__button"
+            >на главную
+            <!-- <img
+              src="img/angle-right.svg"
+              alt="logo: angle right"
+              class="popular-top__image"
+            /> -->
+          </a>
+
+
+ 
+          <!-- /.header-middle__search-form -->
+          <div class="header-middle__tag">
+            <div class="header-middle__popular">Популярные Тэги :</div>
+            <a
+              href="https://alekseykalinin.ru/ehya/details.html"
+              class="header-middle__link"
+              >Design</a
+            >
+            <a
+              href="https://alekseykalinin.ru/ehya/details.html"
+              class="header-middle__link"
+              >User Experience</a
+            >
+            <a
+              href="https://alekseykalinin.ru/ehya/details.html"
+              class="header-middle__link"
+              >User Interfaces</a
+            >
+          </div>
         </div>
         <!-- /.header-middle -->
       </div>
@@ -120,28 +145,158 @@
       <img src="img/wave.svg" alt="wave" class="header-wave" />
     </header>
     <!-- /.header -->
-    <div class="container">
-      <h1 class="top__title">Письмо отправлено</h1>
-      <p class="top__text top__text-top">Скоро с вами свяжуться</p>
-             <a
-            href="https://alekseykalinin.ru/ehya/details.html"
-            class="button button-light popular-top__button"
-            >на главную
-            <img
-              src="img/angle-right.svg"
-              alt="logo: angle right"
-              class="popular-top__image"
-            />
-          </a>
-    </div>
-    <!-- /.container -->
+
+  
 
 
 
 
 
+  <section class="last">
+      <div class="container">
+        <div class="last-wrapper">
+          <div class="last-top">
+            <h2 class="last-top__title">Последние Статьи</h2>
+            <p class="last-top__text">
+              Вот чем мы занимались в последнее время.
+            </p>
+            <a class="button button-light last-top__button"
+              >Смотреть все
+              <img
+                src="img/angle-right.svg"
+                alt="logo: angle right"
+                class="arrow"
+              />
+            </a>
+          </div>
+          <!-- /.last-top -->
 
+          <div class="last__cards">
+            <div class="last__wrapper">
+              <a
+                href="https://alekseykalinin.ru/ehya/details.html"
+                class="last__link last__link-left"
+                ><div class="last__card last__card-left">
+                  <h2 class="last__title last__title-left">Будущее Работы</h2>
+                  <div class="last__text last__text-left">
+                    Большинство людей будут работать на рабочих местах, которых
+                    сегодня не существует.
+                  </div>
+                  <div class="last__personal last__personal-left">
+                    <div class="last__avatar">
+                      <img
+                        class="last__img"
+                        src="img/lina-hicks.jpg"
+                        alt="avatar: Lisa Hicks"
+                      />
+                    </div>
 
+                    <div class="last__author">
+                      <div class="last__name">Lina Hicks</div>
+                      <div class="last__verified">
+                        <div class="last__check">
+                          <img
+                            src="img/verified.svg"
+                            alt="icon: verified"
+                            class="last__icon"
+                          />
+                        </div>
+                        <div class="last__description">Verified writer</div>
+                      </div>
+                    </div>
+                    <div class="last__date">02 May</div>
+                  </div>
+                </div>
+                <!-- /.last__card-left --></a
+              >
+              <!-- /.last__link last__link-left -->
+              <a
+                href="https://alekseykalinin.ru/ehya/details.html"
+                class="last__link last__link-center"
+              >
+                <div class="last__card last__card-center">
+                  <h2 class="last__title last__title-center">Будущее Данных</h2>
+                  <div class="last__text last__text-center">
+                    Благодаря нескончаемым объемам данных и количеству инсайтов
+                  </div>
+                  <div class="last__personal last__personal-center">
+                    <div class="last__avatar">
+                      <img
+                        class="last__img"
+                        src="img/tyler-murray.jpg"
+                        alt="avatar: Joshua William"
+                      />
+                    </div>
+
+                    <div class="last__author">
+                      <div class="last__name">Tyler Murray</div>
+                      <div class="last__verified">
+                        <div class="last__check">
+                          <img
+                            src="img/verified.svg"
+                            alt="icon: verified"
+                            class="last__icon"
+                          />
+                        </div>
+                        <div class="last__description">Verified writer</div>
+                      </div>
+                    </div>
+                    <div class="last__date">02 May</div>
+                  </div>
+                </div>
+                <!-- /.last__card-center --></a
+              >
+              <!-- /.last__link last__link-center -->
+              <a
+                href="https://alekseykalinin.ru/ehya/details.html"
+                class="last__link last__link-right"
+              >
+                <div class="last__card last__card-right">
+                  <h2 class="last__title last__title0right">
+                    Будущее Обучения
+                  </h2>
+                  <div class="last__text last__text-right">
+                    Постоянная способность учиться будет на самых важных <br />
+                    навыках.
+                  </div>
+                  <div class="last__personal last__personal-right">
+                    <div class="last__avatar">
+                      <img
+                        class="last__img"
+                        src="img/warren-casey.jpg"
+                        alt="avatar: Joshua William"
+                      />
+                    </div>
+
+                    <div class="last__author">
+                      <div class="last__name">Warren Casey</div>
+                      <div class="last__verified">
+                        <div class="last__check">
+                          <img
+                            src="img/verified.svg"
+                            alt="icon: verified"
+                            class="last__icon"
+                          />
+                        </div>
+                        <div class="last__description">Verified writer</div>
+                      </div>
+                    </div>
+                    <div class="last__date">02 May</div>
+                  </div>
+                </div>
+                <!-- /.last__card-right --></a
+              >
+              <!-- /.last__link last__link-right -->
+            </div>
+            <!-- /.last__wrapper -->
+          </div>
+          <!-- /.last-bottom -->
+        </div>
+        <!-- /.last-wrapper -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.last -->
 
 
 
@@ -168,8 +323,8 @@
             <h2 class="subscribe__title details__subscribe-title">
               Получайте наши истории на ваш почтовый ящик еженедельно.
             </h2>
-            <form
-              class="subscribe__form details__subscribe-form modal__form"
+             <form
+              class="form subscribe__form modal__form"
               action="send.php"
               method="POST"
             >
@@ -177,12 +332,12 @@
                 placeholder="Ваш Email"
                 type="email"
                 name="email"
-                class="subscribe__input details__subscribe-input"
+                class="input subscribe__input"
                 required
               />
               <button
                 type="submit"
-                class="button button-blue subscribe__button details__subscribe-button"
+                class="button button-blue subscribe__button"
               >
                 Начать
               </button>
@@ -357,8 +512,7 @@
       <!-- /.container -->
     </footer>
     <!-- /.footer -->
-
-    <div class="modal" id="rating-modal">
+   <div class="modal" id="rating-modal">
       <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
       <div class="modal__dialog">
@@ -366,33 +520,34 @@
           <img src="img/close.svg" alt="icon: close" />
         </a>
         <h3 class="modal__title modal__message-title">
-          Получайте наши истории на ваш почтовый ящик еженедельно.
+          Получайте наши истории на ваш почтовый ящик еженедельно
         </h3>
         <form action="send.php" method="POST" class="form modal__form">
-          <input
+          <div class="modal__input-wrapper">     <input
             type="text"
             class="input modal__input modal__input-name"
             placeholder="Ваше полное имя*"
             name="name"
             required
             minlength="2"
-          />
-          <input
+          /></div>
+     <div class="modal__input-wrapper"><input
             type="tel"
             class="input modal__input modal__input-phone input-phone"
             placeholder="Номер телефона*"
             name="phone"
             required
             minlength="2"
-          />
-
-          <input
+          /></div>
+          <div class="modal__input-wrapper">    <input
             type="email"
             class="input modal__input modal__input-email"
             placeholder="Email*"
             name="email"
             required
-          />
+          /></div>
+
+      
 
           <textarea
             class="message modal__message"
@@ -400,9 +555,7 @@
             name="message"
           ></textarea>
 
-          <button class="button modal__button subscribe__button" type="submit">
-            Отправить
-          </button>
+          <button class="button modal__button" type="submit">Отправить</button>
           <span class="modal__info">* Необходимо заполнить</span>
         </form>
       </div>
