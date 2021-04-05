@@ -90,7 +90,7 @@
           </ul>
           <!-- /.header-top__menu -->
           <button
-            class="header-top__button "
+            class="header-top__button"
             data-toggle="modal"
             data-href="#rating-modal"
           >
@@ -212,9 +212,7 @@
               <div class="top__description-mobile">Verified writer</div>
             </div>
           </div>
-          <div class="top__date-mobile header-bottom__date top__date-mobile">
-            MAY, 2 2019
-          </div>
+          <div class="top__date-mobile">MAY, 2 2019</div>
         </div>
         <!-- /.top__personal--mobile -->
         <div class="top__picture"></div>
@@ -486,8 +484,7 @@
         </div>
         <!-- /.bottom__personal -->
 
-
-           <div class="top__personal-mobile bottom__personal-mobile">
+        <div class="top__personal-mobile bottom__personal-mobile">
           <div class="top__avatar-mobile">
             <img
               class="top__img-mobile"
@@ -508,12 +505,10 @@
               <div class="top__description-mobile">Verified writer</div>
             </div>
           </div>
-          <div class="top__date-mobile header-bottom__date top__date-mobile">
-            MAY, 2 2019
-          </div>
+          <div class="top__date-mobile">MAY, 2 2019</div>
         </div>
         <!-- /.top__personal--mobile -->
-       
+
         <h2 class="top__title top__title--mb24">Комментарии</h2>
 
         <div class="comments comments-top">
@@ -575,10 +570,7 @@
               type="text"
               placeholder="Написать комментарий..."
             />
-            <button
-              type="submit"
-              class=" details__search-button"
-            >
+            <button type="submit" class="details__search-button">
               Комментировать
             </button>
           </div>
@@ -791,7 +783,7 @@
     </footer>
     <!-- /.footer -->
 
-   <div class="modal" id="rating-modal">
+    <div class="modal" id="rating-modal">
       <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
       <div class="modal__dialog">
@@ -802,31 +794,35 @@
           Получайте наши истории на ваш почтовый ящик еженедельно
         </h3>
         <form action="send.php" method="POST" class="form modal__form">
-          <div class="modal__input-wrapper">     <input
-            type="text"
-            class="input modal__input modal__input-name"
-            placeholder="Ваше полное имя*"
-            name="name"
-            required
-            minlength="2"
-          /></div>
-     <div class="modal__input-wrapper"><input
-            type="tel"
-            class="input modal__input modal__input-phone input-phone"
-            placeholder="Номер телефона*"
-            name="phone"
-            required
-            minlength="2"
-          /></div>
-          <div class="modal__input-wrapper">    <input
-            type="email"
-            class="input modal__input modal__input-email"
-            placeholder="Email*"
-            name="email"
-            required
-          /></div>
-
-      
+          <div class="modal__input-wrapper">
+            <input
+              type="text"
+              class="input modal__input modal__input-name"
+              placeholder="Ваше полное имя*"
+              name="name"
+              required
+              minlength="2"
+            />
+          </div>
+          <div class="modal__input-wrapper">
+            <input
+              type="tel"
+              class="input modal__input modal__input-phone input-phone"
+              placeholder="Номер телефона*"
+              name="phone"
+              required
+              minlength="2"
+            />
+          </div>
+          <div class="modal__input-wrapper">
+            <input
+              type="email"
+              class="input modal__input modal__input-email"
+              placeholder="Email*"
+              name="email"
+              required
+            />
+          </div>
 
           <textarea
             class="message modal__message"
