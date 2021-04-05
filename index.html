@@ -11,6 +11,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css
 "
     />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@700&display=swap"
@@ -335,7 +337,9 @@
             <p class="last-top__text">
               Вот чем мы занимались в последнее время.
             </p>
-            <a href="https://alekseykalinin.ru/ehya/details.html" class="button button-light last-top__button"
+            <a
+              href="https://alekseykalinin.ru/ehya/details.html"
+              class="button button-light last-top__button"
               >Смотреть все
               <img
                 src="img/angle-right.svg"
@@ -921,11 +925,7 @@
             <h2 class="subscribe__title">
               Получите наши истории на ваш почтовый ящик еженедельно.
             </h2>
-            <form
-              class="form subscribe__form"
-              action="send.php"
-              method="POST"
-            >
+            <form class="form subscribe__form" action="send.php" method="POST">
               <input
                 placeholder="Ваш Email"
                 type="email"
@@ -1121,31 +1121,35 @@
           Получайте наши истории на ваш почтовый ящик еженедельно
         </h3>
         <form action="send.php" method="POST" class="form modal__form">
-          <div class="modal__input-wrapper">     <input
-            type="text"
-            class="input modal__input modal__input-name"
-            placeholder="Ваше полное имя*"
-            name="name"
-            required
-            minlength="2"
-          /></div>
-     <div class="modal__input-wrapper"><input
-            type="tel"
-            class="input modal__input modal__input-phone input-phone"
-            placeholder="Номер телефона*"
-            name="phone"
-            required
-            minlength="2"
-          /></div>
-          <div class="modal__input-wrapper">    <input
-            type="email"
-            class="input modal__input modal__input-email"
-            placeholder="Email*"
-            name="email"
-            required
-          /></div>
-
-      
+          <div class="modal__input-wrapper">
+            <input
+              type="text"
+              class="input modal__input modal__input-name"
+              placeholder="Ваше полное имя*"
+              name="name"
+              required
+              minlength="2"
+            />
+          </div>
+          <div class="modal__input-wrapper">
+            <input
+              type="tel"
+              class="input modal__input modal__input-phone input-phone"
+              placeholder="Номер телефона*"
+              name="phone"
+              required
+              minlength="2"
+            />
+          </div>
+          <div class="modal__input-wrapper">
+            <input
+              type="email"
+              class="input modal__input modal__input-email"
+              placeholder="Email*"
+              name="email"
+              required
+            />
+          </div>
 
           <textarea
             class="message modal__message"
