@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   </head>
   <body>
-    <header id="header" class="header">
+    <header id="header" class="scrollto header">
       <div class="container header-container-top">
         <nav class="header-top">
           <a href="https://alekseykalinin.ru/ehya/" class="header-top__logo">
@@ -477,9 +477,20 @@
               <a href="#" class="footer__menu-link">Измененния</a>
             </li>
           </ul>
-           <a href="#header" class="footer__to-top">Вверх</a>
+          <div class="footer__totop-wrapper footer__totop-wrapper--mobile">
+            <a
+              href="#header"
+              class="scrollto footer__totop footer__totop--mobile"
+              >Вверх</a
+            >
+          </div>
         </div>
         <!-- /.footer-wrapper -->
+        <div class="footer__totop-wrapper footer__totop-wrapper--desktop">
+          <a href="#header" class="scrollto footer__totop footer__totop-desktop"
+            >Вверх</a
+          >
+        </div>
         <div class="footer__copyright">
           <img
             class="footer__copyright-logo"

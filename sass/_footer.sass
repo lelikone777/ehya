@@ -3,7 +3,6 @@
   background-color: #0D2436
   min-height: 668px
   &-wrapper
-    position: relative
     padding-top: 130px
     padding-bottom: 72px
     border-top: 1px solid #1A3245
@@ -83,11 +82,9 @@
       font-size: 16px
       line-height: 22px
       color: #5A7184
-  &__to-top
-    position: absolute
-    right: 20px
-    bottom: 0
-    display: inline-block
+  &__totop
+    margin-left: auto
+    text-align: center
     padding: 10px 20px
     font-family: Open Sans, sans-serif
     font-style: normal
@@ -99,6 +96,10 @@
     color: #fff
     border: none
     cursor: pointer
+    &-wrapper
+      display: flex
+      &--mobile
+        display: none
 
 
 
