@@ -909,6 +909,12 @@
   .footer
     height: 683px
     padding-bottom: 0
+    &__to-top
+      bottom: 35%
+      right: 10px
+      padding: 5px 10px
+      font-size: 10px
+      line-height: 16px
     &-wrapper
       display: grid
       grid-template-rows: 1fr 209px 1fr
@@ -1094,6 +1100,10 @@
       &-link
         &:hover
           color: $light
+    &__to-top
+      &:hover
+        background-color: $light
+        color: $primary
 
   .modal
     &__button
