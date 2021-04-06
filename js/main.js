@@ -102,7 +102,7 @@ $(document).ready(function () {
       rules: {
         phone: {
           required: true,
-          minlength: 16,
+          minlength: 18,
         },
         email: {
           minlength: 6,
