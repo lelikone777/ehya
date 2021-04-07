@@ -46,7 +46,6 @@ $(document).ready(function () {
   var pagesMenu = document.querySelector(".header-top__pages");
 
   menuButton.addEventListener("click", function () {
-    console.log("menu");
     document
       .querySelector(".header-top__menu")
       .classList.toggle("header-top__menu--visible");
