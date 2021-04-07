@@ -72,8 +72,9 @@ $(document).ready(function () {
     }
   });
 
-  var modalButton = $("[data-toggle=modal]");
-  
+
+
+
   modalButton.on("click", openModal);
   var closeModalButton = $(".modal__close");
   closeModalButton.on("click", closeModal);
@@ -137,12 +138,5 @@ $(document).ready(function () {
   });
 
 
-   $(window).scroll(function (event) {
-     var top = $(window).scrollTop();
-     if (top >= 200) {
-       $(".to-top").show();
-     } else {
-       $(".to-top").hide();
-     }
-   });
+  
 });
