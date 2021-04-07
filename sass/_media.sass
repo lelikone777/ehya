@@ -300,37 +300,18 @@
       &__menu
         display: none
         &--visible
-          position: fixed
-          top: 10%
-          left: 0
-          right: 0
-          bottom: 0
-          display: flex;
-          flex-direction: column
+          z-index: 99
+          position: absolute
+          display: flex
+          flex-wrap: wrap
           align-items: center
+          justify-content: space-around
+          border-radius: 8px
+          width: 100%
           height: 100%
-          z-index: 1199
-          align-items: center
-          justify-content: start
+          top: 80%
           background-color: #0D2436
           border: 1px solid #E5E5E5
-          .header-top__menu-landings--visible
-            position: relative
-          .header-top__menu-pages--visible
-            position: relative
-          li
-            margin-top: 20px  
-            margin-bottom: 20px
-            margin-right: 0px
-            &:nth-child(1)
-              margin-right: 0
-            .header-top__menu-link-img
-              transform: rotate(-90deg)
-            ul
-              right: -120px
-              top: 0
-              
-              
         &-button
           margin-right: 9px
           margin-top: 5px

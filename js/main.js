@@ -72,9 +72,8 @@ $(document).ready(function () {
     }
   });
 
-
-
-
+  var modalButton = $("[data-toggle=modal]");
+  
   modalButton.on("click", openModal);
   var closeModalButton = $(".modal__close");
   closeModalButton.on("click", closeModal);
