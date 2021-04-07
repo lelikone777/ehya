@@ -5,20 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ehya* - Отдел Новостей</title>
-    <link rel="stylesheet" href="css/style.css" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css
-"
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css
+    "
     />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@700&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@700&display=swap"
+    rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
@@ -33,10 +33,11 @@
           </a>
           <!-- /.header-top__logo -->
           <ul class="header-top__menu">
-            <li class="header-top__menu-item">
+            
+            <li class="header-top__menu-item header-top__menu-item--visible">
               <a id="top" href="#" class="header-top__menu-link">Домой</a>
             </li>
-            <li class="header-top__menu-item">
+            <li class="header-top__menu-item header-top__menu-item--visible header-top__menu-landings--visible">
               <a
                 href="#"
                 class="header-top__menu-link header-top__menu-link--drop header-top__menu-link--drop header-top__menu-link--landings"
@@ -61,7 +62,8 @@
               </ul>
               <!-- /.header-top__menu-landings -->
             </li>
-            <li class="header-top__menu-item">
+            <li class="header-top__menu-item header-top__menu-item--visible
+            header-top__menu-pages--visible">
               <a
                 href="#"
                 class="header-top__menu-link header-top__menu-link--drop header-top__menu-link--pages"
@@ -79,13 +81,20 @@
               </ul>
               <!-- /.header-top__menu-pages -->
             </li>
-            <li class="header-top__menu-item">
+            <li class="header-top__menu-item header-top__menu-item--visible">
               <a href="#" class="header-top__menu-link">Помощь</a>
             </li>
+                   <button
+            class="header-top__button"
+            data-toggle="modal"
+            data-href="#rating-modal"
+          >
+            Получить
+          </button>
           </ul>
           <!-- /.header-top__menu -->
           <button
-            class="header-top__button"
+            class="header-top__button header-top__button--menu"
             data-toggle="modal"
             data-href="#rating-modal"
           >
