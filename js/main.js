@@ -52,7 +52,6 @@ $(document).ready(function () {
   });
 
   landings.addEventListener("click", function () {
-    console.log("landings");
     document
       .querySelector(".header-top__landings")
       .classList.toggle("header-top__landings--visible");
@@ -62,7 +61,6 @@ $(document).ready(function () {
   });
 
   pages.addEventListener("click", function () {
-    console.log("pages");
     document
       .querySelector(".header-top__pages")
       .classList.toggle("header-top__pages--visible");
@@ -73,7 +71,7 @@ $(document).ready(function () {
   });
 
   var modalButton = $("[data-toggle=modal]");
-  console.log(modalButton);
+
   modalButton.on("click", openModal);
   var closeModalButton = $(".modal__close");
   closeModalButton.on("click", closeModal);
