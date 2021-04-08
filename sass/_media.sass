@@ -295,23 +295,30 @@
       position: relative
       &__button
         display: none
+        &-mobile
+          display: flex
+          margin: 0
+          margin-top: 40px
         // font-size: 14px
         // line-height: 16px
       &__menu
         display: none
         &--visible
+          z-index: 100
           position: fixed
           top: 10%
           left: 0
           right: 0
           bottom: 0
-          display: flex;
+          display: flex
           flex-direction: column
           align-items: center
-          height: 100%
-          z-index: 1199
+          flex-wrap: wrap
           align-items: center
           justify-content: start
+          border-radius: 8px
+          width: 100%
+          height: 100%
           background-color: #0D2436
           border: 1px solid #E5E5E5
           .header-top__menu-landings--visible
@@ -330,7 +337,7 @@
               right: -120px
               top: 0
               
-              
+
         &-button
           margin-right: 9px
           margin-top: 5px
@@ -360,6 +367,15 @@
         margin-top: 11px
 
     &-bottom
+  .header-top__menu-item-1
+    margin-left: -77px   
+  .header-top__menu-item-2
+    margin-left: -12px
+  .header-top__menu-item-3
+    margin-left: -19px
+  .header-top__menu-item-4
+    margin-left: -50px
+
 
   .popular
     position: relative
@@ -1058,12 +1074,19 @@
 
 
 @media ( min-width: 992px )
+
+
+  
   .header
     &-top
       &__menu
         &-link
           &:hover
             color: $primary
+          &--drop
+            &:hover
+              background-image: url('../img/angle-down-blue.svg')
+
       &__button
         &:hover
           color: $primary

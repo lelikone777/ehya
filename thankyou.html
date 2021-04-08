@@ -5,11 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ehya* - Отдел Новостей</title>
-    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css
-"
+    "
     />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -19,11 +18,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header id="header" class="header">
+    <header class="header">
       <div class="container header-container-top">
-        <nav class="header-top">
+        <nav id="header" class="header-top">
           <a href="https://alekseykalinin.ru/ehya/" class="header-top__logo">
             <img
               src="img/header-logo.svg"
@@ -33,19 +33,23 @@
           </a>
           <!-- /.header-top__logo -->
           <ul class="header-top__menu">
-            <li class="header-top__menu-item">
-              <a href="#" class="header-top__menu-link">Домой</a>
+            <li
+              class="header-top__menu-item header-top__menu-item--visible header-top__menu-item-1"
+            >
+              <a id="top" href="#" class="header-top__menu-link">Домой</a>
             </li>
-            <li class="header-top__menu-item">
+            <li
+              class="header-top__menu-item header-top__menu-item--visible header-top__menu-landings--visible header-top__menu-item-2"
+            >
               <a
                 href="#"
                 class="header-top__menu-link header-top__menu-link--drop header-top__menu-link--drop header-top__menu-link--landings"
                 >Лендинги
-                <img
+                <!-- <img
                   src="img/angle-down.svg"
                   alt="logo: angle-down"
                   class="header-top__menu-link-img"
-                />
+                /> -->
               </a>
 
               <ul class="header-top__landings">
@@ -61,16 +65,18 @@
               </ul>
               <!-- /.header-top__menu-landings -->
             </li>
-            <li class="header-top__menu-item">
+            <li
+              class="header-top__menu-item header-top__menu-item--visible header-top__menu-pages--visible header-top__menu-item-3"
+            >
               <a
                 href="#"
                 class="header-top__menu-link header-top__menu-link--drop header-top__menu-link--pages"
                 >Страницы
-                <img
+                <!-- <img
                   src="img/angle-down.svg"
                   alt="logo: angle-down"
                   class="header-top__menu-link-img"
-                />
+                /> -->
               </a>
               <ul class="header-top__pages">
                 <li class="header-top__pages-item"><a href="#">Пункт-1</a></li>
@@ -79,13 +85,23 @@
               </ul>
               <!-- /.header-top__menu-pages -->
             </li>
-            <li class="header-top__menu-item">
+            <li
+              class="header-top__menu-item header-top__menu-item--visible header-top__menu-item-4"
+            >
               <a href="#" class="header-top__menu-link">Помощь</a>
             </li>
+            <button
+              class="header-top__button header-top__button-mobile"
+              data-toggle="modal"
+              data-href="#rating-modal"
+            >
+              Получить
+            </button>
           </ul>
           <!-- /.header-top__menu -->
+          <!-- /.header-top__menu -->
           <button
-            class="header-top__button"
+            class="header-top__button header-top__button"
             data-toggle="modal"
             data-href="#rating-modal"
           >
@@ -116,26 +132,6 @@
               class="popular-top__image"
             /> -->
           </a>
-
-          <!-- /.header-middle__search-form -->
-          <div class="header-middle__tag">
-            <div class="header-middle__popular">Популярные Тэги :</div>
-            <a
-              href="https://alekseykalinin.ru/ehya/details.html"
-              class="header-middle__link"
-              >Design</a
-            >
-            <a
-              href="https://alekseykalinin.ru/ehya/details.html"
-              class="header-middle__link"
-              >User Experience</a
-            >
-            <a
-              href="https://alekseykalinin.ru/ehya/details.html"
-              class="header-middle__link"
-              >User Interfaces</a
-            >
-          </div>
         </div>
         <!-- /.header-middle -->
       </div>
@@ -384,42 +380,47 @@
             <p class="footer__info-text">
               Создайте современный и креативный веб-сайт с crealand
             </p>
-            <div class="footer__info-social ">
+            <div class="footer__info-social">
               <a href="https://www.google.ru/" class="google footer__info-link">
-
                 <!-- <img
                   class="footer__info-img"
                   src="img/google.svg"
                   alt="logo: google" /> -->
-                  </a>
-              <a href="https://twitter.com/?lang=ru" class="twitter footer__info-link"
-                >
+              </a>
+              <a
+                href="https://twitter.com/?lang=ru"
+                class="twitter footer__info-link"
+              >
                 <!-- <img
                   class="footer__info-img"
                   src="img/twitter.svg"
-                  alt="logo: twitter" /> -->
-                  </a
-              ><a href="https://www.instagram.com/" class="instagram footer__info-link"
-                >
+                  alt="logo: twitter" /> --> </a
+              ><a
+                href="https://www.instagram.com/"
+                class="instagram footer__info-link"
+              >
                 <!-- <img
                   class="footer__info-img"
                   src="img/instagram.svg"
-                  alt="logo: instagram" /> -->
-                  </a
-              ><a href="https://ru.linkedin.com/" class="linkdin footer__info-link"
-                >
+                  alt="logo: instagram" /> --> </a
+              ><a
+                href="https://ru.linkedin.com/"
+                class="linkdin footer__info-link"
+              >
                 <!-- <img
                   class="footer__info-img"
                   src="img/linkedin.svg"
-                  alt="logo: linkedin" /> -->
-                  </a
-              ><a href="https://www.youtube.com/" class="youtube footer__info-link">
+                  alt="logo: linkedin" /> --> </a
+              ><a
+                href="https://www.youtube.com/"
+                class="youtube footer__info-link"
+              >
                 <!-- <img
                   class="footer__info-img"
                   src="img/youtube.svg"
                   alt="logo: youtube" -->
-              />
-            </a>
+                />
+              </a>
             </div>
             <!-- /.footer__info-social -->
           </div>
@@ -504,14 +505,16 @@
           <div class="footer__totop-wrapper footer__totop-wrapper--mobile">
             <a
               href="#header"
-              class="scrollto footer__totop footer__totop--mobile"
+              class="to-top scrollto footer__totop footer__totop--mobile"
               >Вверх</a
             >
           </div>
         </div>
         <!-- /.footer-wrapper -->
         <div class="footer__totop-wrapper footer__totop-wrapper--desktop">
-          <a href="#header" class="scrollto footer__totop footer__totop-desktop"
+          <a
+            href="#header"
+            class="to-top scrollto footer__totop footer__totop-desktop"
             >Вверх</a
           >
         </div>

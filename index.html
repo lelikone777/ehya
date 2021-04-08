@@ -5,11 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ehya* - Отдел Новостей</title>
-    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css
-"
+    "
     />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -19,6 +18,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
@@ -32,60 +32,87 @@
             />
           </a>
           <!-- /.header-top__logo -->
-          <ul class="header-top__menu">
-            <li class="header-top__menu-item">
-              <a id="top" href="#" class="header-top__menu-link">Домой</a>
-            </li>
-            <li class="header-top__menu-item">
-              <a
-                href="#"
-                class="header-top__menu-link header-top__menu-link--drop header-top__menu-link--drop header-top__menu-link--landings"
-                >Лендинги
-                <img
-                  src="img/angle-down.svg"
-                  alt="logo: angle-down"
-                  class="header-top__menu-link-img"
-                />
-              </a>
 
-              <ul class="header-top__landings">
-                <li class="header-top__landings-item">
-                  <a href="#">Пункт-1</a>
-                </li>
-                <li class="header-top__landings-item">
-                  <a href="#">Пункт-2</a>
-                </li>
-                <li class="header-top__landings-item">
-                  <a href="#">Пункт-3</a>
-                </li>
-              </ul>
-              <!-- /.header-top__menu-landings -->
-            </li>
-            <li class="header-top__menu-item">
-              <a
-                href="#"
-                class="header-top__menu-link header-top__menu-link--drop header-top__menu-link--pages"
-                >Страницы
-                <img
-                  src="img/angle-down.svg"
-                  alt="logo: angle-down"
-                  class="header-top__menu-link-img"
-                />
-              </a>
-              <ul class="header-top__pages">
-                <li class="header-top__pages-item"><a href="#">Пункт-1</a></li>
-                <li class="header-top__pages-item"><a href="#">Пункт-2</a></li>
-                <li class="header-top__pages-item"><a href="#">Пункт-3</a></li>
-              </ul>
-              <!-- /.header-top__menu-pages -->
-            </li>
-            <li class="header-top__menu-item">
-              <a href="#" class="header-top__menu-link">Помощь</a>
-            </li>
-          </ul>
-          <!-- /.header-top__menu -->
+          <div class="header-top__menu-wrapper">
+            <ul class="header-top__menu">
+              <li
+                class="header-top__menu-item header-top__menu-item--visible header-top__menu-item-1"
+              >
+                <a id="top" href="#" class="header-top__menu-link">Домой</a>
+              </li>
+              <li
+                class="header-top__menu-item header-top__menu-item--visible header-top__menu-landings--visible header-top__menu-item-2"
+              >
+                <a
+                  href="#"
+                  class="header-top__menu-link header-top__menu-link--drop header-top__menu-link--drop header-top__menu-link--landings"
+                  >Лендинги
+                  <!-- <img
+                    src="img/angle-down.svg"
+                    alt="logo: angle-down"
+                    class="header-top__menu-link-img"
+                  />  -->
+                </a>
+
+                <ul class="header-top__landings">
+                  <li class="header-top__landings-item">
+                    <a href="#">Пункт-1</a>
+                  </li>
+                  <li class="header-top__landings-item">
+                    <a href="#">Пункт-2</a>
+                  </li>
+                  <li class="header-top__landings-item">
+                    <a href="#">Пункт-3</a>
+                  </li>
+                </ul>
+                <!-- /.header-top__menu-landings -->
+              </li>
+              <li
+                class="header-top__menu-item header-top__menu-item--visible header-top__menu-pages--visible header-top__menu-item-3"
+              >
+                <a
+                  href="#"
+                  class="header-top__menu-link header-top__menu-link--drop header-top__menu-link--pages"
+                  >Страницы
+                  <!-- <img
+                    src="img/angle-down.svg"
+                    alt="logo: angle-down"
+                    class="header-top__menu-link-img"
+                  />    -->
+                </a>
+                <ul class="header-top__pages">
+                  <li class="header-top__pages-item">
+                    <a href="#">Пункт-1</a>
+                  </li>
+                  <li class="header-top__pages-item">
+                    <a href="#">Пункт-2</a>
+                  </li>
+                  <li class="header-top__pages-item">
+                    <a href="#">Пункт-3</a>
+                  </li>
+                </ul>
+                <!-- /.header-top__menu-pages -->
+              </li>
+              <li class="header-top__menu-item header-top__menu-item--visible">
+                <a
+                  href="#"
+                  class="header-top__menu-link header-top__menu-item-4"
+                  >Помощь</a
+                >
+              </li>
+              <button
+                class="header-top__button header-top__button-mobile"
+                data-toggle="modal"
+                data-href="#rating-modal"
+              >
+                Получить
+              </button>
+            </ul>
+            <!-- /.header-top__menu -->
+          </div>
+          <!-- /.header-top__menu-wrapper -->
           <button
-            class="header-top__button"
+            class="header-top__button header-top__button"
             data-toggle="modal"
             data-href="#rating-modal"
           >
@@ -815,7 +842,8 @@
               <div class="all-bottom__card all-bottom__card-right">
                 <h2 class="all-bottom__title">Будущее Обучения</h2>
                 <div class="all-bottom__text all-bottom__text-right">
-                  Постоянная способность учиться будет на самых важных навыках.
+                  Постоянная способность учиться будет на самых важных<br />
+                  навыках.
                 </div>
                 <div class="all-bottom__personal all-bottom__personal-right">
                   <div class="all-bottom__avatar">
@@ -1119,14 +1147,16 @@
           <div class="footer__totop-wrapper footer__totop-wrapper--mobile">
             <a
               href="#header"
-              class="scrollto footer__totop footer__totop--mobile"
+              class="to-top scrollto footer__totop footer__totop--mobile"
               >Вверх</a
             >
           </div>
         </div>
         <!-- /.footer-wrapper -->
         <div class="footer__totop-wrapper footer__totop-wrapper--desktop">
-          <a href="#header" class="to-top scrollto footer__totop footer__totop-desktop"
+          <a
+            href="#header"
+            class="to-top scrollto footer__totop footer__totop-desktop"
             >Вверх</a
           >
         </div>

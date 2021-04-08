@@ -44,15 +44,19 @@ $(document).ready(function () {
   var pages = document.querySelector(".header-top__menu-link--pages");
   var landingsMenu = document.querySelector(".header-top__landings");
   var pagesMenu = document.querySelector(".header-top__pages");
+  var headerTopMenu = document.querySelector(".header-top__menu");
 
   menuButton.addEventListener("click", function () {
-    document
-      .querySelector(".header-top__menu")
-      .classList.toggle("header-top__menu--visible");
+    if (!headerTopMenu.classList.contains("header-top__menu--visible")) {
+      headerTopMenu.classList.add("header-top__menu--visible");
+      document.body.classList.add("lock");
+    } else {
+      headerTopMenu.classList.remove("header-top__menu--visible");
+      document.body.classList.remove("lock");
+    }
   });
 
   landings.addEventListener("click", function () {
-   
     document
       .querySelector(".header-top__landings")
       .classList.toggle("header-top__landings--visible");
@@ -62,7 +66,6 @@ $(document).ready(function () {
   });
 
   pages.addEventListener("click", function () {
-    
     document
       .querySelector(".header-top__pages")
       .classList.toggle("header-top__pages--visible");
@@ -72,9 +75,7 @@ $(document).ready(function () {
     }
   });
 
-
-
-
+  var modalButton = $("[data-toggle=modal]");
   modalButton.on("click", openModal);
   var closeModalButton = $(".modal__close");
   closeModalButton.on("click", closeModal);
@@ -85,14 +86,18 @@ $(document).ready(function () {
     var targetModal = $(this).attr("data-href");
     $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
     $(targetModal).find(".modal__dialog").addClass("modal__dialog--visible");
-    document.body.classList.toggle("lock");
+    if (!document.body.classList.contains("lock")) {
+      document.body.classList.add("lock");
+    }
   }
   function closeModal(event) {
     event.preventDefault();
     var modalDialog = $(".modal__dialog");
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
-    document.body.classList.remove("lock");
+    if (!headerTopMenu.classList.contains("header-top__menu--visible")) {
+      document.body.classList.remove("lock");
+    }
   }
 
   $(".input-phone").mask("+7 (000) 000-00-00");
@@ -136,7 +141,12 @@ $(document).ready(function () {
       return false;
     });
   });
-
-
-  
+  $(window).scroll(function (event) {
+    var top = $(window).scrollTop();
+    if (top >= 200) {
+      $(".to-top").show();
+    } else {
+      $(".to-top").hide();
+    }
+  });
 });
